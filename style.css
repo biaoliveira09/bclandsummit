@@ -660,6 +660,11 @@ textarea {
 	}
 	.main-navigation ul {
 		display: flex;
+		gap: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		white-space: nowrap;
+		align-items: center;
 	}
 }
 .site-main .comment-navigation,
@@ -687,7 +692,7 @@ textarea {
 .site-header {
 	display: flex;
 	align-items: center;
-	width: 100%;
+	width: 95%;
 	margin: 0.5rem 0.25rem;
 	justify-content: space-between;
 }
@@ -706,6 +711,22 @@ textarea {
 
 #site-navigation.main-navigation {
 	width: 40px;
+}
+
+footer {
+	background-color: #e56f17;
+	height: 200px;
+}
+
+.menu-item-157 {
+	background-color: #e56f17;
+	border-radius: 0.35rem;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	font-weight: 500;
+}
+.menu-item-157 a:visited {
+	color: #fff;
 }
 
 /* Posts and pages

@@ -81,6 +81,11 @@
 
 	.main-navigation ul {
 		display: flex;
+		gap: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		white-space: nowrap;
+		align-items: center;
 	}
 }
 
@@ -108,10 +113,10 @@
 .site-header {
 	display: flex;
 	align-items: center;
-	width: 100%;
+	width: 95%;
 	margin: 0.5rem 0.25rem;
-
 	justify-content: space-between;
+
 	.site-branding {
 		img {
 			width: 230px;
@@ -130,4 +135,21 @@
 
 #site-navigation.main-navigation {
 	width: 40px;
+}
+
+footer {
+	background-color: $bcls__orange;
+	height: 200px;
+}
+
+.menu-item-157 {
+	background-color: $bcls__orange;
+	border-radius: 0.35rem;
+
+	color: #fff;
+	padding: 0.5rem 1rem;
+	font-weight: 500;
+	a:visited {
+		color: #fff;
+	}
 }

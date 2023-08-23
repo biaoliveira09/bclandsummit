@@ -12,18 +12,29 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+	<?php 
+			wp_nav_menu(
+				array(
+					'theme_location' => 'footer-menu',
+					'menu_id'        => 'footer-menu',
+				)
+			);
+			
+			wp_nav_menu(
+				array(
+					'theme_location' => 'social-media-menu',
+					'menu_id'        => 'social-media-menu',
+				)
+			);
+
+			?>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bclandsummit' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'bclandsummit' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'bclandsummit' ), 'bclandsummit', '<a href="https://www.biaoliveira.com/">Bia Oliveira</a>' );
-				?>
+			
+			<a href="">Privacy Policy</a>
+			<a href="">Terms of Use</a>
+			<p>Copyright © 2023 BC Land Summit Society</a>
+			<p>Website by <a href="">WireDaze Studio</a></p>
+			
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

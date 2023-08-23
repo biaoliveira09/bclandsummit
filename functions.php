@@ -50,7 +50,8 @@ function bclandsummit_setup() {
 	register_nav_menus(
 		array(
             'header-menu' => __('Header Menu', 'bclandsummit'),
-            // Add more custom menu locations if needed
+            'footer-menu' => __('Footer Menu', 'bclandsummit'),
+			'social-media-menu' => __('Social Media Menu', 'bclandsummit'),
         )
 	);
 
