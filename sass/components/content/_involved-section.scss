@@ -1,0 +1,40 @@
+.section-involved {
+	background-color: rgba(88, 66, 154, 0.15);
+	color: $bcls__purple;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3rem 0;
+
+	h2 {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 300;
+		font-size: 0.95rem;
+		text-transform: uppercase;
+		position: relative;
+		display: inline-block;
+		letter-spacing: 1px;
+		text-align: center;
+
+		&:after {
+			content: '';
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -5px;
+			width: 300px;
+			border-bottom: 1px solid $bcls__purple;
+		}
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+	a {
+		background-color: $bcls__purple;
+		padding: 0.5rem 1rem;
+		border-radius: 0.35rem;
+		color: #fff;
+		text-decoration: none;
+	}
+}

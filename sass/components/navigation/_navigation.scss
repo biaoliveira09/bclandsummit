@@ -139,7 +139,16 @@
 
 footer {
 	background-color: $bcls__orange;
-	height: 200px;
+	display: flex;
+	flex-direction: column;
+	.menu-footer-menu-container {
+		ul {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			list-style-type: none;
+		}
+	}
 }
 
 .menu-item-157 {
@@ -151,5 +160,17 @@ footer {
 	font-weight: 500;
 	a:visited {
 		color: #fff;
+	}
+}
+
+.menu-social-media-menu-container {
+	ul {
+		display: flex;
+		gap: 1rem;
+		list-style-type: none;
+		svg {
+			width: 30px;
+			height: 30px;
+		}
 	}
 }

@@ -110,7 +110,7 @@ get_header();
 						$get_involved_url = $get_involved['url'];
 						$get_involved_title = $get_involved['title'];
 											?>
-											<a class="cta" href="<?php echo $get_involved_url; ?>"><?php echo $get_involved_title; ?></a>
+											<a href="<?php echo $get_involved_url; ?>"><?php echo $get_involved_title; ?></a>
 											<?php
 					}
 				}
