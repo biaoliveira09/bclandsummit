@@ -1,9 +1,29 @@
 .section-attend {
-	background-image: url(../../../assets/collaboration.jpg);
+	background-image: url(http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/collaboration-scaled.jpg);
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
+	background-attachment: fixed;
 	color: white;
-	background-color: $bcls__orange;
+	height: 700px;
+	position: relative;
+	padding: 3rem 1rem;
+
+	&::before {
+		content: '';
+		background: rgba(229, 111, 23, 0.78);
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	&-content {
+		position: relative;
+		z-index: 2;
+	}
 
 	h2 {
 		font-family: 'Poppins', sans-serif;
@@ -13,6 +33,7 @@
 		position: relative;
 		display: inline-block;
 		letter-spacing: 1px;
+		z-index: 3;
 
 		&:after {
 			content: '';
@@ -20,11 +41,20 @@
 			left: 50%;
 			transform: translateX(-50%);
 			bottom: -5px;
-			width: 370px;
+			width: 300px;
 			border-bottom: 1px solid white;
+			z-index: 3;
 		}
 	}
+
 	h3 {
 		font-size: 1.5rem;
+		position: relative;
+		z-index: 3;
+	}
+
+	p {
+		position: relative;
+		z-index: 3;
 	}
 }

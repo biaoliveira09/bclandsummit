@@ -29,7 +29,7 @@ get_header();
 
 				$register_subheading = get_field('register_subheading');
 				if ($register_subheading) {
-					echo '<h2>' . $register_subheading . '</h2>';
+					echo '<h3>' . $register_subheading . '</h3>';
                 }
 
             }

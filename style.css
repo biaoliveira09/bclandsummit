@@ -782,7 +782,7 @@ footer .menu-footer-menu-container ul {
 .section-info {
 	background-color: rgba(88, 66, 154, 0.15);
 	color: #58429a;
-	padding: 3rem 1.5rem;
+	padding: 3rem 1rem;
 }
 .section-info h2 {
 	font-family: "Poppins", sans-serif;
@@ -808,11 +808,29 @@ footer .menu-footer-menu-container ul {
 }
 
 .section-attend {
-	background-image: url(../../../assets/collaboration.jpg);
+	background-image: url(http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/collaboration-scaled.jpg);
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
+	background-attachment: fixed;
 	color: white;
-	background-color: #e56f17;
+	height: 700px;
+	position: relative;
+	padding: 3rem 1rem;
+}
+.section-attend::before {
+	content: "";
+	background: rgba(229, 111, 23, 0.78);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+.section-attend-content {
+	position: relative;
+	z-index: 2;
 }
 .section-attend h2 {
 	font-family: "Poppins", sans-serif;
@@ -822,6 +840,7 @@ footer .menu-footer-menu-container ul {
 	position: relative;
 	display: inline-block;
 	letter-spacing: 1px;
+	z-index: 3;
 }
 .section-attend h2:after {
 	content: "";
@@ -829,13 +848,23 @@ footer .menu-footer-menu-container ul {
 	left: 50%;
 	transform: translateX(-50%);
 	bottom: -5px;
-	width: 370px;
+	width: 300px;
 	border-bottom: 1px solid white;
+	z-index: 3;
 }
 .section-attend h3 {
 	font-size: 1.5rem;
+	position: relative;
+	z-index: 3;
+}
+.section-attend p {
+	position: relative;
+	z-index: 3;
 }
 
+.section-staytuned {
+	padding: 3rem 1rem;
+}
 .section-staytuned h2 {
 	color: #e56f17;
 }
@@ -849,7 +878,7 @@ footer .menu-footer-menu-container ul {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 3rem 0;
+	padding: 3rem 1rem;
 }
 .section-involved h2 {
 	font-family: "Poppins", sans-serif;
@@ -879,6 +908,44 @@ footer .menu-footer-menu-container ul {
 	border-radius: 0.35rem;
 	color: #fff;
 	text-decoration: none;
+}
+
+.section-register {
+	background-image: url(http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/nanaimo-scaled.jpg);
+	background-size: cover;
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	position: relative;
+	color: white;
+}
+.section-register::after {
+	content: "";
+	background: rgba(88, 66, 154, 0.8);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+.section-register h2 {
+	position: relative;
+	display: inline-block;
+	z-index: 3;
+	font-size: 2.2rem;
+}
+.section-register h3 {
+	font-family: "Poppins", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 3;
 }
 
 /* Comments
