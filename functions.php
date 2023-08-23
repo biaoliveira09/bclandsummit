@@ -177,3 +177,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function google_fonts() {
+    wp_enqueue_style( 'lora-font', 'https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap', false );
+    wp_enqueue_style( 'poppins-font', "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap", false );
+}
+add_action( 'wp_enqueue_scripts', 'google_fonts' );
