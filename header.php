@@ -50,10 +50,11 @@
 			<?php
 			wp_nav_menu(
 				array(
-					'theme_location' => 'header-menu',
+					'theme_location' => 'header-menu', // Make sure this matches the assigned theme location
 					'menu_id'        => 'primary-menu',
 				)
 			);
+			
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
