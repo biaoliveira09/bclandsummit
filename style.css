@@ -684,6 +684,30 @@ textarea {
 	flex: 1 0 50%;
 }
 
+.site-header {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin: 0.5rem 0.25rem;
+	justify-content: space-between;
+}
+.site-header .site-branding img {
+	width: 230px;
+}
+.site-header .site-title {
+	display: none;
+}
+
+.menu-toggle {
+	border: none;
+	background-color: white;
+	width: 40px;
+}
+
+#site-navigation.main-navigation {
+	width: 40px;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -708,12 +732,6 @@ textarea {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
-}
-
-.site-header {
-	display: flex;
-	align-items: center;
-	width: 100%;
 }
 
 /* Comments
