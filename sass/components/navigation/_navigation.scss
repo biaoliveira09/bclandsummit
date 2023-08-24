@@ -80,8 +80,8 @@
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
-	padding: 0.5rem;
+	justify-content: space-between;
+	padding: 0.5rem 1.5rem;
 	.site-title {
 		display: none;
 	}
@@ -96,8 +96,6 @@
 
 	.menu-main-menu-container {
 		display: none;
-		// background-color: $bcls__purple;
-		// opacity: 0.9;
 		position: absolute;
 		top: 100%;
 		left: 0;

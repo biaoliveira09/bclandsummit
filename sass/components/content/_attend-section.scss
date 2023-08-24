@@ -57,3 +57,9 @@
 		z-index: 3;
 	}
 }
+
+@media screen and (min-width: 40em) {
+	.section-attend {
+		padding: 6rem 2rem;
+	}
+}

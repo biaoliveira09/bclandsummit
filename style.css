@@ -667,8 +667,8 @@ textarea {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
-	padding: 0.5rem;
+	justify-content: space-between;
+	padding: 0.5rem 1.5rem;
 	position: relative;
 }
 .site-header .site-title {
@@ -831,7 +831,7 @@ footer .site-info {
 }
 
 .section-hero {
-	position: relative; /* Added for positioning the ::after pseudo-element */
+	position: relative;
 	margin-top: 4rem;
 	padding: 4rem 1rem;
 	height: 470px;
@@ -839,11 +839,10 @@ footer .site-info {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 1rem;
-	background-image: url(http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/nanaimo-scaled.jpg);
+	background-image: url(http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/nanaimo-aerial.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top center;
 }
 .section-hero::after {
 	content: "";
@@ -853,13 +852,14 @@ footer .site-info {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 1; /* Adjusted z-index to place it behind the content */
+	z-index: 1;
 }
 .section-hero h2 {
 	font-size: 1.6rem;
 	z-index: 2;
 	color: white;
 	text-align: center;
+	font-weight: 500;
 }
 .section-hero .date-location {
 	display: flex;
@@ -884,9 +884,35 @@ footer .site-info {
 }
 .section-hero a {
 	margin: 1rem;
+	color: white;
 	z-index: 2;
 }
+.section-hero a:visited {
+	color: white;
+}
 
+@media screen and (min-width: 40em) {
+	.section-hero {
+		margin-top: 6rem;
+		height: 700px;
+	}
+	.section-hero h2 {
+		font-size: 2rem;
+		width: 600px;
+	}
+}
+@media screen and (min-width: 62.5em) {
+	.section-hero h2 {
+		font-size: 3rem;
+		width: 800px;
+	}
+	.section-hero .date-location .date {
+		font-size: 2rem;
+	}
+	.section-hero .date-location .location {
+		font-size: 1.5rem;
+	}
+}
 .section-info {
 	background-color: rgba(88, 66, 154, 0.15);
 	color: #58429a;
@@ -915,6 +941,11 @@ footer .site-info {
 	font-size: 1.5rem;
 }
 
+@media screen and (min-width: 40em) {
+	.section-info {
+		padding: 6rem 2rem;
+	}
+}
 .section-attend {
 	background-image: url(http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/collaboration-scaled.jpg);
 	background-size: cover;
@@ -969,6 +1000,11 @@ footer .site-info {
 	z-index: 3;
 }
 
+@media screen and (min-width: 40em) {
+	.section-attend {
+		padding: 6rem 2rem;
+	}
+}
 .section-staytuned {
 	padding: 3rem 1rem;
 }
@@ -1017,6 +1053,11 @@ footer .site-info {
 	text-decoration: none;
 }
 
+@media screen and (min-width: 40em) {
+	.section-involved {
+		padding: 6rem 2rem;
+	}
+}
 .page-id-41 main {
 	margin-top: 3rem;
 	padding: 2rem 1rem;
