@@ -28,6 +28,11 @@ get_header();
 					echo '<h2>' . $register_heading . '</h2>';
                 }
 
+				$register_logo = get_field('register_logo');
+				if ($register_logo) {
+					echo '<div class="reg-logo"><img src="' . $register_logo['url'] . '" alt="' . $register_logo['alt'] . '"></div>';
+				}
+
 				$register_subheading = get_field('register_subheading');
 				if ($register_subheading) {
 					echo '<h3>' . $register_subheading . '</h3>';

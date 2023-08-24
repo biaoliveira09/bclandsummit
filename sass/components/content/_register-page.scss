@@ -48,4 +48,19 @@
 		z-index: 3;
 		text-align: center;
 	}
+
+	img {
+		height: 200px;
+	}
+}
+
+@media screen and (min-width: 40em) {
+	.section-register {
+		h2 {
+			padding-top: 5rem;
+		}
+		img {
+			height: 400px;
+		}
+	}
 }

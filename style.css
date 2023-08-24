@@ -764,6 +764,7 @@ footer {
 	flex-direction: column;
 	padding: 1rem;
 	gap: 2rem;
+	align-items: center;
 }
 footer .menu-footer-menu-container {
 	padding: 1rem;
@@ -798,6 +799,10 @@ footer .menu-social-media-menu-container ul {
 footer .menu-social-media-menu-container ul svg {
 	width: 20px;
 	height: 20px;
+}
+footer .footer-logo {
+	width: 80px;
+	height: 80px;
 }
 footer .site-info {
 	text-align: center;
@@ -854,6 +859,10 @@ footer .site-info {
 	bottom: 0;
 	left: 0;
 	z-index: 1;
+	background-image: url(http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/logo-seethrough.png);
+	background-size: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 .section-hero h2 {
 	font-size: 1.6rem;
@@ -904,7 +913,7 @@ footer .site-info {
 }
 @media screen and (min-width: 62.5em) {
 	.section-hero h2 {
-		font-size: 3rem;
+		font-size: 2.8rem;
 		width: 800px;
 	}
 	.section-hero .date-location .date {
@@ -920,6 +929,21 @@ footer .site-info {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
+}
+.section-info::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	background-image: url(http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/qqquad.png);
+	opacity: 0.4;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .section-info .info-text {
 	padding: 2rem;
@@ -1043,6 +1067,21 @@ footer .site-info {
 }
 .section-staytuned {
 	padding: 3rem 1rem;
+	position: relative;
+}
+.section-staytuned::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	background-image: url(http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/qqquad-orange.png);
+	opacity: 0.9;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .section-staytuned h2 {
 	color: #e56f17;
@@ -1080,6 +1119,7 @@ footer .site-info {
 }
 .section-involved h3 {
 	font-size: 1.5rem;
+	margin-bottom: 0;
 }
 .section-involved a {
 	background-color: #58429a;
@@ -1182,7 +1222,18 @@ footer .site-info {
 	z-index: 3;
 	text-align: center;
 }
+.section-register img {
+	height: 200px;
+}
 
+@media screen and (min-width: 40em) {
+	.section-register h2 {
+		padding-top: 5rem;
+	}
+	.section-register img {
+		height: 400px;
+	}
+}
 .page-id-130 main {
 	margin-top: 3rem;
 	padding: 2rem 1rem;

@@ -19,6 +19,7 @@ get_header();
 	<main id="primary" class="site-main">
 
 	<section class="section-hero">
+		<div class="hero-logo"></div>
             <?php
             if (function_exists('get_field')) {
                 $main_heading = get_field('main_heading');

@@ -12,6 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+	
 	<?php 
 			wp_nav_menu(
 				array(
@@ -28,6 +29,8 @@
 			);
 
 			?>
+<img src="http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/white-logo.png" alt="BC Land Summit Logo" class="footer-logo">
+			
 		<div class="site-info">
 			
 			<a href="">Privacy Policy</a>
