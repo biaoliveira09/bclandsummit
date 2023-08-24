@@ -98,6 +98,22 @@ get_header();
 						echo '<div>' . $who_should_attend_text . '</div></div>';
 					}
 				}
+
+
+			$professionals_section = get_field('who_should_attend_section')['attendees'];
+
+			echo '<div class="professionals-container">';
+			for ($i = 0; $i < count($professionals_section); $i++) {
+				$professionals_key = 'professionals_picture_' . ($i);
+				$professional = $professionals_section[$professionals_key];
+
+				if ($professional) {
+					echo '<img src="' . $professional['url'] . '" alt="' .$professional['title'] .'" />';
+				}
+			}
+			echo '</div>';
+
+
             ?>
         </section>
 		<section class="section-involved">
@@ -133,14 +149,19 @@ get_header();
 		<section class="section-staytuned">
 			<?php
 			if (function_exists('get_field')) {
-					$stay_tuned_heading = get_field('stay_tuned_section')['stay_tuned_heading'];
+				$stay_tuned_graphic = get_field('stay_tuned_section')['exclamation_mark'];
+				if ($stay_tuned_graphic) {
+					echo '<img src="' . $stay_tuned_graphic['url'] . '" alt="Exclamation Mark">';
+				}
+				
+				$stay_tuned_heading = get_field('stay_tuned_section')['stay_tuned_heading'];
 					if ($stay_tuned_heading) {
-						echo '<h2>' . $stay_tuned_heading . '</h2>';
+						echo '<div><h2>' . $stay_tuned_heading . '</h2>';
 					}
 
 					$stay_tuned_text = get_field('stay_tuned_section')['stay_tuned_text'];
 					if ($stay_tuned_text) {
-						echo '<div>' . $stay_tuned_text . '</div>';
+						echo '<div>' . $stay_tuned_text . '</div></div>';
 					}
 				}
             ?>

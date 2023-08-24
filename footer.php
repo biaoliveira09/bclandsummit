@@ -12,15 +12,20 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-	
-	<?php 
+	<div class="footer-container">
+			<img src="http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/white-logo.png" alt="BC Land Summit Logo" class="footer-logo">
+			<?php 
 			wp_nav_menu(
 				array(
 					'theme_location' => 'footer-menu',
 					'menu_id'        => 'footer-menu',
-				)
-			);
-			
+					)
+				);
+				?>
+				</div>
+		<div class="footer-social-menu">
+		
+		<?php	
 			wp_nav_menu(
 				array(
 					'theme_location' => 'social-media-menu',
@@ -29,12 +34,10 @@
 			);
 
 			?>
-<img src="http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/white-logo.png" alt="BC Land Summit Logo" class="footer-logo">
-			
+		</div>
+
+
 		<div class="site-info">
-			
-			<a href="">Privacy Policy</a>
-			<a href="">Terms of Use</a>
 			<p>Copyright © 2023 BC Land Summit Society</a>
 			<p>Website by <a href="">WireDaze Studio</a></p>
 			

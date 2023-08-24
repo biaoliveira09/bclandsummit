@@ -1,7 +1,10 @@
 .section-staytuned {
 	padding: 3rem 1rem;
-
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	position: relative;
+	justify-content: center;
 
 	&::after {
 		content: '';
@@ -23,5 +26,24 @@
 	}
 	p {
 		color: $bcls__purple;
+	}
+
+	img {
+		width: 120px;
+		height: 120px;
+		z-index: 2;
+	}
+}
+@media screen and (min-width: 32em) {
+	.section-staytuned {
+		flex-direction: row;
+		gap: 2rem;
+		div {
+			max-width: 600px;
+		}
+		img {
+			width: 150px;
+			height: 150px;
+		}
 	}
 }

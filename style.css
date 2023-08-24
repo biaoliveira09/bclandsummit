@@ -778,12 +778,19 @@ footer {
 	background-color: #e56f17;
 	display: flex;
 	flex-direction: column;
-	padding: 2rem 1rem;
+	padding: 3rem 1rem;
 	gap: 2rem;
 	align-items: center;
 }
+footer .footer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
 footer .menu-footer-menu-container {
 	padding: 1rem;
+	order: 2;
 }
 footer .menu-footer-menu-container ul {
 	display: flex;
@@ -804,28 +811,57 @@ footer .menu-footer-menu-container ul a {
 footer .menu-footer-menu-container ul a:hover {
 	color: #58429a;
 }
+footer .menu-social-media-menu-container {
+	order: 3;
+}
 footer .menu-social-media-menu-container ul {
 	display: flex;
-	gap: 1rem;
+	gap: 2rem;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	justify-content: center;
 }
 footer .menu-social-media-menu-container ul svg {
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 }
 footer .footer-logo {
 	width: 80px;
 	height: 80px;
+	order: 1;
 }
 footer .site-info {
 	text-align: center;
 	color: white;
 	font-size: 0.7rem;
+	order: 4;
 }
 
+@media screen and (min-width: 45.5em) {
+	footer {
+		padding: 2rem 4rem;
+	}
+	footer .footer-container {
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+	}
+	footer .footer-container ul {
+		align-items: flex-end;
+		margin-bottom: 1rem;
+	}
+	footer .footer-container .footer-menus {
+		order: 2;
+	}
+	footer .footer-container .footer-logo {
+		order: 1;
+	}
+	footer .menu-social-media-menu-container ul svg {
+		width: 20px;
+		height: 20px;
+	}
+}
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -876,7 +912,7 @@ footer .site-info {
 	left: 0;
 	z-index: 1;
 	background-image: url(http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/logo-seethrough.png);
-	background-size: 300px;
+	background-size: 250px;
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -1082,7 +1118,11 @@ footer .site-info {
 }
 .section-staytuned {
 	padding: 3rem 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	position: relative;
+	justify-content: center;
 }
 .section-staytuned::after {
 	content: "";
@@ -1104,7 +1144,25 @@ footer .site-info {
 .section-staytuned p {
 	color: #58429a;
 }
+.section-staytuned img {
+	width: 120px;
+	height: 120px;
+	z-index: 2;
+}
 
+@media screen and (min-width: 32em) {
+	.section-staytuned {
+		flex-direction: row;
+		gap: 2rem;
+	}
+	.section-staytuned div {
+		max-width: 600px;
+	}
+	.section-staytuned img {
+		width: 150px;
+		height: 150px;
+	}
+}
 .section-involved {
 	background-color: rgba(88, 66, 154, 0.15);
 	color: #58429a;
