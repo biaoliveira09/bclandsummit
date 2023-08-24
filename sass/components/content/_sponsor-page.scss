@@ -1,6 +1,7 @@
-.page-id-41 main {
+.page-id-130 main {
 	margin-top: 3rem;
 	padding: 2rem 1rem;
+
 	ul {
 		margin: 0;
 	}
@@ -18,28 +19,19 @@
 		font-size: 1.4rem;
 	}
 
-	section {
-		margin-bottom: 3rem;
+	a {
+		background-color: $bcls__purple;
+		padding: 0.5rem 1rem;
+		border-radius: 0.35rem;
+		color: #fff;
+		text-decoration: none;
+		width: fit-content;
 	}
 
-	.board-container {
+	section {
+		margin-bottom: 3rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		flex-wrap: wrap;
-		img {
-			width: 200px;
-			height: 200px;
-		}
-
-		font-family: 'Lora', serif;
-		font-weight: 700;
-
-		.dir-title {
-			font-family: 'Poppins', sans-serif;
-			font-style: italic;
-			color: $bcls__purple;
-			font-weight: 400;
-		}
 	}
 }

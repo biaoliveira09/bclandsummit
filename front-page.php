@@ -23,7 +23,7 @@ get_header();
             if (function_exists('get_field')) {
                 $main_heading = get_field('main_heading');
                 if ($main_heading) {
-                    echo '<h1>' . $main_heading . '</h1>';
+                    echo '<h2>' . $main_heading . '</h2>';
                 }
 
                 $dates = get_field('dates');

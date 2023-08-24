@@ -66,7 +66,7 @@ get_header();
 				}
 
 				$board_of_directors_section = get_field('board_of_directors_section'); 
-
+				echo '<div class="board-container">';
 				for ($i = 1; $i <= count($board_of_directors_section); $i++) {
 					$director_key = 'director_' . $i;
 					$director = $board_of_directors_section[$director_key];
@@ -75,16 +75,17 @@ get_header();
 					 $director_picture = $director['director_picture'];
 
 					if ($director) {
-						echo '<div>';
+						echo '<div class="director-container">';
 				
 					if ($director_picture) {
 						echo '<img src="' . $director_picture['url'] . '" alt="' . $director_name . '" />';
 					}
-					echo '<p>' . $director_name . ', ' . $director_title . '</p>';
+					echo '<p>' . $director_name . ', <span class="dir-title">' . $director_title . '</span></p>';
 				
 					echo '</div>';
 					}
 				}
+				echo '</div>';
 
             }
             ?>

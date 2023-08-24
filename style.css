@@ -855,7 +855,7 @@ footer .site-info {
 	left: 0;
 	z-index: 1; /* Adjusted z-index to place it behind the content */
 }
-.section-hero h1 {
+.section-hero h2 {
 	font-size: 1.6rem;
 	z-index: 2;
 	color: white;
@@ -890,12 +890,12 @@ footer .site-info {
 .section-info {
 	background-color: rgba(88, 66, 154, 0.15);
 	color: #58429a;
-	padding: 3rem 1rem;
+	padding: 4rem 1rem;
 }
 .section-info h2 {
 	font-family: "Poppins", sans-serif;
 	font-weight: 300;
-	font-size: 0.95rem;
+	font-size: 0.85rem;
 	text-transform: uppercase;
 	position: relative;
 	display: inline-block;
@@ -908,7 +908,7 @@ footer .site-info {
 	left: 50%;
 	transform: translateX(-50%);
 	bottom: -5px;
-	width: 370px;
+	width: 200px;
 	border-bottom: 1px solid #58429a;
 }
 .section-info h3 {
@@ -922,9 +922,8 @@ footer .site-info {
 	background-position: center;
 	background-attachment: fixed;
 	color: white;
-	height: 700px;
 	position: relative;
-	padding: 3rem 1rem;
+	padding: 4rem 1rem;
 }
 .section-attend::before {
 	content: "";
@@ -943,7 +942,7 @@ footer .site-info {
 .section-attend h2 {
 	font-family: "Poppins", sans-serif;
 	font-weight: 300;
-	font-size: 0.95rem;
+	font-size: 0.85rem;
 	text-transform: uppercase;
 	position: relative;
 	display: inline-block;
@@ -986,12 +985,12 @@ footer .site-info {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 3rem 1rem;
+	padding: 4rem 1rem;
 }
 .section-involved h2 {
 	font-family: "Poppins", sans-serif;
 	font-weight: 300;
-	font-size: 0.95rem;
+	font-size: 0.85rem;
 	text-transform: uppercase;
 	position: relative;
 	display: inline-block;
@@ -1018,6 +1017,46 @@ footer .site-info {
 	text-decoration: none;
 }
 
+.page-id-41 main {
+	margin-top: 3rem;
+	padding: 2rem 1rem;
+}
+.page-id-41 main ul {
+	margin: 0;
+}
+.page-id-41 main h2 {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.3rem;
+	letter-spacing: 1px;
+	color: #58429a;
+	font-family: "Poppins", sans-serif;
+}
+.page-id-41 main h3 {
+	font-size: 1.4rem;
+}
+.page-id-41 main section {
+	margin-bottom: 3rem;
+}
+.page-id-41 main .board-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	font-family: "Lora", serif;
+	font-weight: 700;
+}
+.page-id-41 main .board-container img {
+	width: 200px;
+	height: 200px;
+}
+.page-id-41 main .board-container .dir-title {
+	font-family: "Poppins", sans-serif;
+	font-style: italic;
+	color: #58429a;
+	font-weight: 400;
+}
+
 .section-register {
 	background-image: url(http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/nanaimo-scaled.jpg);
 	background-size: cover;
@@ -1039,21 +1078,66 @@ footer .site-info {
 	left: 0;
 	z-index: 1;
 }
+.section-register .reg-container {
+	position: relative;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
 .section-register h2 {
 	position: relative;
 	display: inline-block;
 	z-index: 3;
-	font-size: 2.2rem;
+	font-size: 2rem;
+	text-align: center;
 }
 .section-register h3 {
 	font-family: "Poppins", sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	font-weight: 400;
 	line-height: 1.5;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	position: relative;
 	z-index: 3;
+	text-align: center;
+}
+
+.page-id-130 main {
+	margin-top: 3rem;
+	padding: 2rem 1rem;
+}
+.page-id-130 main ul {
+	margin: 0;
+}
+.page-id-130 main h2 {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.3rem;
+	letter-spacing: 1px;
+	color: #58429a;
+	font-family: "Poppins", sans-serif;
+}
+.page-id-130 main h3 {
+	font-size: 1.4rem;
+}
+.page-id-130 main a {
+	background-color: #58429a;
+	padding: 0.5rem 1rem;
+	border-radius: 0.35rem;
+	color: #fff;
+	text-decoration: none;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+.page-id-130 main section {
+	margin-bottom: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /* Comments

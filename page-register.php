@@ -20,6 +20,7 @@ get_header();
 	<?php while (have_posts()) : the_post(); ?>
 
 	<section class="section-register">
+		<div class="reg-container">
             <?php
             if (function_exists('get_field')) {
                 $register_heading = get_field('register_heading');
@@ -34,6 +35,7 @@ get_header();
 
             }
             ?>
+			</div>
     </section>
 
 	<?php endwhile; // End of the loop. ?>
