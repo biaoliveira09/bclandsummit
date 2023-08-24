@@ -1,5 +1,6 @@
 .section-attend {
-	background-image: url(http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/collaboration-scaled.jpg);
+	background-image: url(assets/collaboration.jpg);
+
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -38,17 +39,6 @@
 		display: inline-block;
 		letter-spacing: 1px;
 		z-index: 3;
-
-		// &:after {
-		// 	content: '';
-		// 	position: absolute;
-		// 	left: 50%;
-		// 	transform: translateX(-50%);
-		// 	bottom: -5px;
-		// 	width: 300px;
-		// 	border-bottom: 1px solid white;
-		// 	z-index: 3;
-		// }
 	}
 
 	h3 {

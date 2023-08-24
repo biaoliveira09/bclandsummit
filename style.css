@@ -454,6 +454,7 @@ big {
 body {
 	background: #fff;
 	position: relative;
+	height: 0px !important;
 }
 
 hr {
@@ -731,6 +732,7 @@ textarea {
 		padding: 0.5rem 1rem;
 		font-weight: 500;
 	}
+	.menu-item-157 a,
 	.menu-item-157 a:visited {
 		color: #fff;
 	}
@@ -827,8 +829,7 @@ footer .menu-social-media-menu-container ul svg {
 	height: 30px;
 }
 footer .footer-logo {
-	width: 80px;
-	height: 80px;
+	width: 230px;
 	order: 1;
 }
 footer .site-info {
@@ -840,7 +841,7 @@ footer .site-info {
 
 @media screen and (min-width: 45.5em) {
 	footer {
-		padding: 2rem 4rem;
+		padding: 2rem 4rem 0;
 	}
 	footer .footer-container {
 		flex-direction: row;
@@ -856,6 +857,7 @@ footer .site-info {
 	}
 	footer .footer-container .footer-logo {
 		order: 1;
+		width: 310px;
 	}
 	footer .menu-social-media-menu-container ul svg {
 		width: 20px;
@@ -1039,11 +1041,15 @@ footer .site-info {
 		flex-direction: row;
 	}
 	.section-info img {
-		max-height: 400px;
+		max-height: 380px;
 		width: 45%;
+	}
+	.section-info .info-container {
+		padding: 6rem 2rem;
 	}
 	.section-info .info-text {
 		padding: 2rem;
+		max-width: 570px;
 	}
 	.section-info .info-text h2 {
 		display: inline-block;
@@ -1055,7 +1061,7 @@ footer .site-info {
 	}
 }
 .section-attend {
-	background-image: url(http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/collaboration-scaled.jpg);
+	background-image: url(assets/collaboration.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;

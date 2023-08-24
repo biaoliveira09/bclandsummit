@@ -70,12 +70,17 @@
 		flex-direction: row;
 
 		img {
-			max-height: 400px;
+			max-height: 380px;
 			width: 45%;
 		}
 
+		.info-container {
+			padding: 6rem 2rem;
+			// width: 900px;
+		}
 		.info-text {
 			padding: 2rem;
+			max-width: 570px;
 
 			h2 {
 				display: inline-block;
@@ -86,17 +91,6 @@
 			h3 {
 				font-size: 1.5rem;
 			}
-
-			// .info-section-text {
-			// 	&:before {
-			// 		content: '';
-			// 		position: absolute;
-			// 		left: 0;
-			// 		top: -10px;
-			// 		transform: translateY(-50%);
-			// 		height: 100%;
-			// 	}
-			// }
 		}
 	}
 }

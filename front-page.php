@@ -49,7 +49,9 @@ get_header();
             ?>
         </section>
 		<section class="section-info">
+			<div class="info-container">
 			<div class="info-text">
+
 			<?php
 			if (function_exists('get_field')) {
 					$info_heading = get_field('whats_happening_section')['whats_happening_heading'];
@@ -66,7 +68,7 @@ get_header();
 					if ($whats_happening_text) {
 						echo '<div>' . $whats_happening_text . '</div></div>';
 					}
-				?> </div>
+				?> </div></div>
 				<div class="venue-pics">
 					<?php
 					$venue_picture = get_field('whats_happening_section')['venue_picture'];
