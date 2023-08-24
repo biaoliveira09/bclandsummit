@@ -715,18 +715,23 @@ textarea {
 
 .menu-item-157 {
 	background-color: #e56f17;
-	border-radius: 0.35rem;
-	color: #fff;
-	padding: 0.5rem 1rem;
-	font-weight: 500;
-}
-.menu-item-157 a:visited {
-	color: #fff;
 }
 
 @media screen and (min-width: 40em) {
 	.menu-toggle {
 		display: none;
+	}
+	.menu-item-157 {
+		background-color: #e56f17;
+		width: -moz-fit-content;
+		width: fit-content;
+		border-radius: 0.35rem;
+		color: #fff;
+		padding: 0.5rem 1rem;
+		font-weight: 500;
+	}
+	.menu-item-157 a:visited {
+		color: #fff;
 	}
 	.site-header {
 		display: flex;
@@ -747,7 +752,14 @@ textarea {
 		letter-spacing: 1px;
 		white-space: nowrap;
 		align-items: center;
-		margin-left: auto;
+	}
+	.site-header .menu-main-menu-container {
+		display: flex;
+	}
+	.site-header .menu-main-menu-container ul {
+		display: flex;
+		flex-direction: row;
+		position: absolute;
 	}
 }
 @media screen and (min-width: 42em) {
@@ -762,7 +774,7 @@ footer {
 	background-color: #e56f17;
 	display: flex;
 	flex-direction: column;
-	padding: 1rem;
+	padding: 2rem 1rem;
 	gap: 2rem;
 	align-items: center;
 }
@@ -992,7 +1004,6 @@ footer .site-info {
 	}
 	.section-info .info-text {
 		padding: 2rem;
-		margin-left: 4rem;
 	}
 	.section-info .info-text h2 {
 		display: inline-block;
@@ -1174,6 +1185,13 @@ footer .site-info {
 	font-weight: 400;
 }
 
+@media screen and (min-width: 30em) {
+	.page-id-41 main .board-container {
+		flex-direction: row;
+		gap: 1rem;
+		justify-content: center;
+	}
+}
 .section-register {
 	background-image: url(http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/nanaimo-scaled.jpg);
 	background-size: cover;

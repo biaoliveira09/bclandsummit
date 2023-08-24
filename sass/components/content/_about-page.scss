@@ -43,3 +43,11 @@
 		}
 	}
 }
+
+@media screen and (min-width: 30em) {
+	.page-id-41 main .board-container {
+		flex-direction: row;
+		gap: 1rem;
+		justify-content: center;
+	}
+}
