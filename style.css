@@ -913,7 +913,7 @@ footer .site-info {
 	bottom: 0;
 	left: 0;
 	z-index: 1;
-	background-image: url(http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/logo-seethrough.png);
+	background-image: url(assets/logo-seethrough.png);
 	background-size: 250px;
 	background-position: center;
 	background-repeat: no-repeat;
