@@ -86,7 +86,7 @@ get_header();
 			if (function_exists('get_field')) {
 					$attend_heading = get_field('who_should_attend_section')['who_should_attend_heading'];
 					if ($attend_heading) {
-						echo '<h2>' . $attend_heading . '</h2>';
+						echo '<div class="attend-text"><h2>' . $attend_heading . '</h2>';
 					}
 
 					$who_should_attend_secondary_heading = get_field('who_should_attend_section')['who_should_attend_secondary_heading'];
@@ -95,7 +95,7 @@ get_header();
 					}
 					$who_should_attend_text = get_field('who_should_attend_section')['who_should_attend_text'];
 					if ($who_should_attend_text) {
-						echo '<div>' . $who_should_attend_text . '</div></div>';
+						echo '<div>' . $who_should_attend_text . '</div></div></div>';
 					}
 				}
 
@@ -103,7 +103,7 @@ get_header();
 			$professionals_section = get_field('who_should_attend_section')['attendees'];
 
 			echo '<div class="professionals-container">';
-			for ($i = 0; $i < count($professionals_section); $i++) {
+			for ($i = 0; $i < count($professionals_section) +1; $i++) {
 				$professionals_key = 'professionals_picture_' . ($i);
 				$professional = $professionals_section[$professionals_key];
 
