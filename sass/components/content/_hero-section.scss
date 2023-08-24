@@ -1,6 +1,63 @@
 .section-hero {
+	position: relative; /* Added for positioning the ::after pseudo-element */
+	margin-top: 4rem;
+	padding: 4rem 1rem;
+	height: 470px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	padding: 1rem;
+	background-image: url(http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/nanaimo-scaled.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	&::after {
+		content: '';
+		background: rgba(88, 66, 154, 0.8);
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1; /* Adjusted z-index to place it behind the content */
+	}
+
+	h1 {
+		font-size: 1.7rem;
+		z-index: 2;
+		color: white;
+		text-align: center;
+	}
+
+	.date-location {
+		display: flex;
+		color: white;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 0.6rem;
+		z-index: 2;
+		margin: 1rem 0;
+
+		.date {
+			font-weight: bold;
+			font-size: 1.5rem;
+		}
+
+		.location {
+			font-style: italic;
+			font-size: 1.2rem;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+
+	a {
+		margin: 1rem;
+		z-index: 2;
+	}
 }

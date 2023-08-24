@@ -28,12 +28,12 @@ get_header();
 
                 $dates = get_field('dates');
                 if ($dates) {
-                    echo '<p>' . $dates . '</p>';
+                    echo '<div class="date-location"><span class="date"><p>' . $dates . '</p></span>';
                 }
 
                 $location = get_field('location');
                 if ($location) {
-                    echo '<p>' . $location . '</p>';
+                    echo '<span class="location"><p>' . $location . '</p></span></div>';
                 }
 
 				$register_cta = get_field('register_cta');
