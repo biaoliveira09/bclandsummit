@@ -48,6 +48,7 @@ get_header();
             ?>
         </section>
 		<section class="section-info">
+			<div class="info-text">
 			<?php
 			if (function_exists('get_field')) {
 					$info_heading = get_field('whats_happening_section')['whats_happening_heading'];
@@ -57,15 +58,27 @@ get_header();
 
 					$whats_happening_secondary_heading = get_field('whats_happening_section')['whats_happening_secondary_heading'];
 					if ($whats_happening_secondary_heading) {
-						echo '<h3>' . $whats_happening_secondary_heading . '</h3>';
+						echo '<div class="info-section-text"><h3>' . $whats_happening_secondary_heading . '</h3>';
 					}
 
 					$whats_happening_text = get_field('whats_happening_section')['whats_happening_text'];
 					if ($whats_happening_text) {
-						echo '<div>' . $whats_happening_text . '</div>';
+						echo '<div>' . $whats_happening_text . '</div></div>';
+					}
+				?> </div>
+				<div class="venue-pics">
+					<?php
+					$venue_picture = get_field('whats_happening_section')['venue_picture'];
+					if ($venue_picture) {
+						echo '<img src="' . $venue_picture['url'] . '" alt="Venue Picture">';
+					}
+					$venue_picture2 = get_field('whats_happening_section')['venue_picture_2'];
+					if ($venue_picture2) {
+						echo '<img src="' . $venue_picture2['url'] . '" alt="Venue Picture">';
 					}
 				}
             ?>
+			</div>
         </section>
 		<section class="section-attend">
 			<?php
@@ -77,12 +90,11 @@ get_header();
 
 					$who_should_attend_secondary_heading = get_field('who_should_attend_section')['who_should_attend_secondary_heading'];
 					if ($who_should_attend_secondary_heading) {
-						echo '<h3>' . $who_should_attend_secondary_heading . '</h3>';
+						echo '<div class="attend-section-text"><h3>' . $who_should_attend_secondary_heading . '</h3>';
 					}
-
 					$who_should_attend_text = get_field('who_should_attend_section')['who_should_attend_text'];
 					if ($who_should_attend_text) {
-						echo '<div>' . $who_should_attend_text . '</div>';
+						echo '<div>' . $who_should_attend_text . '</div></div>';
 					}
 				}
             ?>

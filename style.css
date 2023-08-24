@@ -402,6 +402,7 @@ h5,
 h6 {
 	clear: both;
 	font-family: "Lora", serif;
+	font-weight: 500;
 }
 
 p {
@@ -916,9 +917,15 @@ footer .site-info {
 .section-info {
 	background-color: rgba(88, 66, 154, 0.15);
 	color: #58429a;
-	padding: 4rem 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.section-info h2 {
+.section-info .info-text {
+	padding: 2rem;
+	margin-right: 1rem;
+}
+.section-info .info-text h2 {
 	font-family: "Poppins", sans-serif;
 	font-weight: 300;
 	font-size: 0.85rem;
@@ -926,24 +933,50 @@ footer .site-info {
 	position: relative;
 	display: inline-block;
 	letter-spacing: 1px;
-	text-align: center; /* Center the text */
+	text-align: center;
 }
-.section-info h2:after {
+.section-info .info-text h3 {
+	font-size: 1.5rem;
+}
+.section-info .info-text .info-section-text {
+	position: relative;
+}
+.section-info .info-text .info-section-text:before {
 	content: "";
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: -5px;
-	width: 200px;
-	border-bottom: 1px solid #58429a;
+	top: -30px;
+	width: 100%;
+	border-top: 1px solid #58429a;
 }
-.section-info h3 {
-	font-size: 1.5rem;
+.section-info .venue-pics {
+	display: flex;
+	flex-wrap: wrap;
+}
+.section-info .venue-pics img {
+	width: 100%;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 55em) {
 	.section-info {
-		padding: 6rem 2rem;
+		flex-direction: row;
+	}
+	.section-info img {
+		max-height: 400px;
+		width: 45%;
+	}
+	.section-info .info-text {
+		padding: 2rem;
+		margin-left: 4rem;
+	}
+	.section-info .info-text h2 {
+		display: inline-block;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+	.section-info .info-text h3 {
+		font-size: 1.5rem;
 	}
 }
 .section-attend {
@@ -958,7 +991,7 @@ footer .site-info {
 }
 .section-attend::before {
 	content: "";
-	background: rgba(229, 111, 23, 0.78);
+	background: rgba(190, 98, 27, 0.88);
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -980,16 +1013,6 @@ footer .site-info {
 	letter-spacing: 1px;
 	z-index: 3;
 }
-.section-attend h2:after {
-	content: "";
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: -5px;
-	width: 300px;
-	border-bottom: 1px solid white;
-	z-index: 3;
-}
 .section-attend h3 {
 	font-size: 1.5rem;
 	position: relative;
@@ -997,6 +1020,19 @@ footer .site-info {
 }
 .section-attend p {
 	position: relative;
+	z-index: 3;
+}
+.section-attend .attend-section-text {
+	position: relative;
+}
+.section-attend .attend-section-text:before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -30px;
+	width: 100%;
+	border-top: 1px solid white;
 	z-index: 3;
 }
 

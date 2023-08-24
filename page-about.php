@@ -33,7 +33,15 @@ get_header();
 					echo '<div>' . $about_content . '</div>';
 				}
 
-            }
+				$history_link = get_field('about_section')['our_history_button'];
+				if ($history_link) {
+					$history_link_url = $history_link['url'];
+					$history_link_title = $history_link['title'];
+					?>
+					<a href="<?php echo $history_link_url; ?>" class="cta"><?php echo $history_link_title; ?></a>
+					<?php
+
+				}}
             ?>
     </section>
 		<section class="section-mission">

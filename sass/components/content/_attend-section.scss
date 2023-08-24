@@ -10,7 +10,7 @@
 
 	&::before {
 		content: '';
-		background: rgba(229, 111, 23, 0.78);
+		background: rgba(190, 98, 27, 0.88);
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -34,16 +34,16 @@
 		letter-spacing: 1px;
 		z-index: 3;
 
-		&:after {
-			content: '';
-			position: absolute;
-			left: 50%;
-			transform: translateX(-50%);
-			bottom: -5px;
-			width: 300px;
-			border-bottom: 1px solid white;
-			z-index: 3;
-		}
+		// &:after {
+		// 	content: '';
+		// 	position: absolute;
+		// 	left: 50%;
+		// 	transform: translateX(-50%);
+		// 	bottom: -5px;
+		// 	width: 300px;
+		// 	border-bottom: 1px solid white;
+		// 	z-index: 3;
+		// }
 	}
 
 	h3 {
@@ -55,6 +55,21 @@
 	p {
 		position: relative;
 		z-index: 3;
+	}
+
+	.attend-section-text {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			top: -30px;
+			width: 100%;
+			border-top: 1px solid white;
+			z-index: 3;
+		}
 	}
 }
 
