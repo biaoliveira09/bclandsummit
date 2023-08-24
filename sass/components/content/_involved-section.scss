@@ -5,6 +5,7 @@
 	flex-direction: column;
 	align-items: center;
 	padding: 4rem 1rem;
+	text-align: center;
 
 	h2 {
 		font-family: 'Poppins', sans-serif;
@@ -42,6 +43,9 @@
 
 @media screen and (min-width: 40em) {
 	.section-involved {
-		padding: 6rem 2rem;
+		padding: 6rem 3rem;
+		p {
+			max-width: 700px;
+		}
 	}
 }
