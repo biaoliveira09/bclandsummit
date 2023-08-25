@@ -10,7 +10,7 @@
  */
 
 ?>
-
+</div> 
 	<footer id="colophon" class="site-footer">
 	<div class="footer-container">
 			<img src="https://raw.githubusercontent.com/biaoliveira09/bclandsummit/d7b7ac1635ba6576cd81f7573bd20f59b9c00811/assets/white-main-logo.png" alt="BC Land Summit Logo" class="footer-logo">

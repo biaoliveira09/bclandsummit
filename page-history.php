@@ -44,6 +44,8 @@ get_header();
 <div class="timeline">
 	<div class="container left">
             <?php
+				if (function_exists('get_field')) {
+
             $timeline_section = get_field('timeline_section'); 
 
 			 echo '<div class="content">';
@@ -88,7 +90,6 @@ get_header();
 			echo '</div>';
 			echo '</div>';
 			echo '<div class="container right">';
-
 			echo '<div class="content">';
 				echo '<h3>' . $timeline_section['conference_4']['conference_name'] . '</h3>';
 				echo '<div class="conference-details">';
@@ -100,7 +101,27 @@ get_header();
 				echo '<h4 class="timeline-heading">Speakers</h4>';
 				echo '<p>' . $timeline_section['conference_4']['conference_speakers'] . '</p>';
 			echo '</div>';
+			echo '</div>';
+			echo '<div class="container">';
+			echo '</div>';
+			
+				}
             ?>
+			</div>
+			<div class="middle">
+			<span><h3>2024 BC Land Summit</h3></span>
+			<?php 
+				if (function_exists('get_field')) {
+					$register_cta = get_field('register_cta');
+					if ($register_cta) {
+					$register_cta_url = $register_cta['url'];
+										$register_cta_title = $register_cta['title'];
+										?>
+										<a href="<?php echo $register_cta_url; ?>" class="cta"><?php echo $register_cta_title; ?></a>
+										<?php
+				}}
+			
+			?>
 			</div>
     </section>
 

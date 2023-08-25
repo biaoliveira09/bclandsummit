@@ -533,6 +533,16 @@ body {
 	width: 16%;
 }
 
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	min-height: 90vh;
+}
+
+main {
+	flex-grow: 1;
+}
+
 hr {
 	background-color: #ccc;
 	border: 0;
@@ -985,7 +995,8 @@ footer .site-info p {
 
 .page-id-83 main,
 .page-id-41 main,
-.page-id-130 main {
+.page-id-130 main,
+.page-id-142 main {
 	margin-top: 3rem;
 	padding: 2rem;
 }
@@ -993,21 +1004,24 @@ footer .site-info p {
 @media screen and (min-width: 30em) {
 	.page-id-41 main,
 	.page-id-83 main,
-	.page-id-130 main {
+	.page-id-130 main,
+	.page-id-142 main {
 		margin: 5rem 2rem;
 	}
 }
 @media screen and (min-width: 41.75em) {
 	.page-id-41 main,
 	.page-id-83 main,
-	.page-id-130 main {
+	.page-id-130 main,
+	.page-id-142 main {
 		margin: 7rem 2.2rem;
 	}
 }
 @media screen and (min-width: 55em) {
 	.page-id-41 main,
 	.page-id-83 main,
-	.page-id-130 main {
+	.page-id-130 main,
+	.page-id-142 main {
 		margin: 5.5rem 5rem;
 		display: flex;
 		flex-direction: column;
@@ -1015,7 +1029,8 @@ footer .site-info p {
 	}
 	.page-id-41 main section,
 	.page-id-83 main section,
-	.page-id-130 main section {
+	.page-id-130 main section,
+	.page-id-142 main section {
 		max-width: 780px;
 	}
 }
@@ -1577,7 +1592,6 @@ footer .site-info p {
 @media screen and (min-width: 55em) {
 	.section-sponsorship {
 		margin: 3rem 0 1rem;
-		min-height: 400px;
 	}
 }
 .page-id-83 main h2 {
@@ -1631,7 +1645,7 @@ footer .site-info p {
 
 /* Container around content */
 .container {
-	padding: 10px 40px;
+	padding: 0px 40px;
 	position: relative;
 	background-color: inherit;
 	width: 50%;
@@ -1646,7 +1660,7 @@ footer .site-info p {
 	right: -12px;
 	background-color: white;
 	border: 4px solid #e56f17;
-	top: 15px;
+	top: 0px;
 	border-radius: 50%;
 	z-index: 1;
 }
@@ -1707,6 +1721,7 @@ footer .site-info p {
 	margin: 0;
 	padding: 0;
 	color: rgb(82, 82, 82);
+	font-size: 0.9rem;
 	display: flex;
 	flex-direction: column;
 	gap: 0;
@@ -1714,10 +1729,24 @@ footer .site-info p {
 .conference-details .timeline-date {
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	color: rgb(147, 106, 73);
 }
 .conference-details p {
-	margin: 0.35rem 0;
+	margin: 0.25rem 0;
 	padding: 0;
+}
+
+.container h4 {
+	font-weight: 600;
+	margin: 0.5rem 0;
+	padding: 0;
+}
+
+.middle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 4rem;
 }
 
 /* Comments
