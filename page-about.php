@@ -20,6 +20,7 @@ get_header();
 	<?php while (have_posts()) : the_post(); ?>
 
 
+
 	<section class="section-about">
             <?php
             if (function_exists('get_field')) {
@@ -27,10 +28,19 @@ get_header();
 				if ($about_heading) {
 					echo '<h2>' . $about_heading . '</h2>';
                 }
+				echo '	<div class="about-container">
+				<div class="decorative-vertical">
+					<span class="green"></span>
+					<span class="purple"></span>
+					<span class="violet"></span>
+					<span class="red"></span>
+					<span class="orange"></span>
+					<span class="yellow"></span>
+				</div>';
 
 				$about_content = get_field('about_section')['about_section_text'];
 				if ($about_content) {
-					echo '<div>' . $about_content . '</div>';
+					echo '<div>' . $about_content . '</div></div>';
 				}
 
 				$history_link = get_field('about_section')['our_history_button'];
@@ -38,12 +48,13 @@ get_header();
 					$history_link_url = $history_link['url'];
 					$history_link_title = $history_link['title'];
 					?>
-					<a href="<?php echo $history_link_url; ?>" class="cta"><?php echo $history_link_title; ?></a>
+					<p><a class="cta" href="<?php echo $history_link_url; ?>"><?php echo $history_link_title; ?></a></p>
 					<?php
 
 				}}
             ?>
     </section>
+		
 		<section class="section-mission">
             <?php
             if (function_exists('get_field')) {
@@ -60,6 +71,14 @@ get_header();
             }
             ?>
         </section>
+		<div class="decorative-line">
+		<span class="green"></span>
+		<span class="purple"></span>
+		<span class="violet"></span>
+		<span class="red"></span>
+		<span class="orange"></span>
+		<span class="yellow"></span>
+	</div>
 		<section class="section-board">
             <?php
             if (function_exists('get_field')) {
@@ -88,7 +107,7 @@ get_header();
 					if ($director_picture) {
 						echo '<img src="' . $director_picture['url'] . '" alt="' . $director_name . '" />';
 					}
-					echo '<p>' . $director_name . ', <span class="dir-title">' . $director_title . '</span></p>';
+					echo '<p>' . $director_name . ', <br /><span class="dir-title">' . $director_title . '</span></p>';
 				
 					echo '</div>';
 					}

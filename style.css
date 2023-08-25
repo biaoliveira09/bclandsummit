@@ -457,6 +457,82 @@ body {
 	height: 0px !important;
 }
 
+.decorative-vertical {
+	display: none;
+}
+
+@media screen and (min-width: 45em) {
+	.decorative-vertical {
+		width: 30px;
+		height: 100%;
+		max-height: 800px;
+		display: flex;
+		flex-direction: column;
+		margin: 0 2rem;
+	}
+	.decorative-vertical .green {
+		background-color: #5a9630;
+		height: 80px;
+	}
+	.decorative-vertical .purple {
+		background-color: #58429a;
+		height: 80px;
+	}
+	.decorative-vertical .violet {
+		background-color: #a3439b;
+		height: 80px;
+	}
+	.decorative-vertical .red {
+		background-color: #e21351;
+		height: 80px;
+	}
+	.decorative-vertical .orange {
+		background-color: #e56f17;
+		height: 80px;
+	}
+	.decorative-vertical .yellow {
+		background-color: #deb406;
+		height: 80px;
+	}
+}
+.decorative-line {
+	width: 100%;
+	max-width: 800px;
+	display: flex;
+	justify-content: center;
+	margin: 2rem 0;
+}
+.decorative-line .green {
+	background-color: #5a9630;
+	height: 9px;
+	width: 16%;
+}
+.decorative-line .purple {
+	background-color: #58429a;
+	height: 9px;
+	width: 16%;
+}
+.decorative-line .violet {
+	background-color: #a3439b;
+	height: 9px;
+	width: 16%;
+}
+.decorative-line .red {
+	background-color: #e21351;
+	height: 9px;
+	width: 16%;
+}
+.decorative-line .orange {
+	background-color: #e56f17;
+	height: 9px;
+	width: 16%;
+}
+.decorative-line .yellow {
+	background-color: #deb406;
+	height: 9px;
+	width: 16%;
+}
+
 hr {
 	background-color: #ccc;
 	border: 0;
@@ -541,6 +617,8 @@ nav a {
 	background-color: #e56f17;
 	padding: 0.5rem 1rem;
 	border-radius: 0.4rem;
+	width: -moz-fit-content;
+	width: fit-content;
 }
 .cta a {
 	color: #fff;
@@ -899,7 +977,7 @@ footer .site-info {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-image: url(http://localhost:8888/bclandsummit/wp-content/uploads/2023/08/nanaimo-aerial.png);
+	background-image: url(https://raw.githubusercontent.com/biaoliveira09/bclandsummit/2e2beac169f7f9ba66e9fd2a82083d8a4a118011/assets/nanaimo-aerial.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
@@ -1244,7 +1322,7 @@ footer .site-info {
 }
 .page-id-41 main {
 	margin-top: 3rem;
-	padding: 2rem 1rem;
+	padding: 2rem;
 }
 .page-id-41 main ul {
 	margin: 0;
@@ -1258,22 +1336,47 @@ footer .site-info {
 	font-family: "Poppins", sans-serif;
 }
 .page-id-41 main h3 {
+	font-weight: 600;
 	font-size: 1.4rem;
+}
+.page-id-41 main h4 {
+	font-weight: 600;
+	font-size: 1.2rem;
 }
 .page-id-41 main section {
 	margin-bottom: 3rem;
+}
+.page-id-41 main section.section-about {
+	margin-left: 0;
+	padding: 0;
+}
+.page-id-41 main section.section-about p {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.page-id-41 main section.section-about p a,
+.page-id-41 main section.section-about p a:visited {
+	color: white;
+}
+.page-id-41 main section.section-board {
+	margin-top: 1.2rem;
 }
 .page-id-41 main .board-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	flex-wrap: wrap;
+	align-items: stretch;
 	font-family: "Lora", serif;
 	font-weight: 700;
 }
+.page-id-41 main .board-container .director-container {
+	width: 170px;
+}
 .page-id-41 main .board-container img {
-	width: 200px;
-	height: 200px;
+	width: 170px;
+	height: 170px;
 }
 .page-id-41 main .board-container .dir-title {
 	font-family: "Poppins", sans-serif;
@@ -1283,12 +1386,34 @@ footer .site-info {
 }
 
 @media screen and (min-width: 30em) {
+	.page-id-41 main {
+		margin: 5rem 2rem;
+	}
 	.page-id-41 main .board-container {
 		flex-direction: row;
 		gap: 1rem;
 		justify-content: center;
 	}
 }
+@media screen and (min-width: 55em) {
+	.page-id-41 main {
+		margin: 5.5rem 5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.page-id-41 main section {
+		max-width: 780px;
+	}
+	.page-id-41 main section h3 {
+		font-size: 2rem;
+		margin-top: 0.2rem;
+	}
+}
+.about-container {
+	display: flex;
+}
+
 .section-register {
 	background-image: url(https://raw.githubusercontent.com/biaoliveira09/bclandsummit/a8e60e7006f53df0e856abe2c5a518a2c0db3167/assets/nanaimo.jpg);
 	background-size: cover;

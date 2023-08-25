@@ -24,6 +24,7 @@
 	background-color: $bcls__orange;
 	padding: 0.5rem 1rem;
 	border-radius: 0.4rem;
+	width: fit-content;
 	a {
 		color: #fff;
 	}
@@ -47,3 +48,73 @@
 		outline: 0;
 	}
 }
+
+// .decorative-vertical {
+// 	width: 30px;
+// 	height: 100%;
+// 	max-height: 800px;
+// 	display: flex;
+// 	flex-direction: column;
+// 	margin: 0 2rem;
+// 	.green {
+// 		background-color: $bcls__green;
+// 		height: 75px;
+// 	}
+// 	.purple {
+// 		background-color: $bcls__purple;
+// 		height: 75px;
+// 	}
+// 	.violet {
+// 		background-color: $bcls__violet;
+// 		height: 75px;
+// 	}
+// 	.red {
+// 		background-color: $bcls__red;
+// 		height: 75px;
+// 	}
+// 	.orange {
+// 		background-color: $bcls__orange;
+// 		height: 75px;
+// 	}
+// 	.yellow {
+// 		background-color: $bcls__yellow;
+// 		height: 75px;
+// 	}
+// }
+
+// .decorative-line {
+// 	width: 90%;
+// 	max-width: 800px;
+// 	display: flex;
+// 	margin: 2rem 0;
+// 	.green {
+// 		background-color: $bcls__green;
+// 		height: 9px;
+// 		width: 16%;
+// 	}
+// 	.purple {
+// 		background-color: $bcls__purple;
+// 		height: 9px;
+// 		width: 16%;
+// 	}
+// 	.violet {
+// 		background-color: $bcls__violet;
+// 		height: 9px;
+// 		width: 16%;
+// 	}
+// 	.red {
+// 		background-color: $bcls__red;
+// 		height: 9px;
+// 		width: 16%;
+// 	}
+// 	.orange {
+// 		background-color: $bcls__orange;
+// 		height: 9px;
+// 		width: 16%;
+// 	}
+// 	.yellow {
+// 		background-color: $bcls__yellow;
+// 		height: 9px;
+// 		width: 16%;
+// 	}
+// }
