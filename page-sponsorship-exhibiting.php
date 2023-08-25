@@ -20,6 +20,7 @@ get_header();
 	<?php while (have_posts()) : the_post(); ?>
 		
 	<section class="section-sponsorship">
+		<div class="sponsorship-text">
             <?php
             if (function_exists('get_field')) {
                 $sande_heading = get_field('s&e_heading');
@@ -48,6 +49,7 @@ get_header();
 
             }
             ?>
+			</div>
     </section>
 
 	<?php endwhile; // End of the loop. ?>
