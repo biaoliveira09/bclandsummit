@@ -916,10 +916,14 @@ footer .site-info {
 	font-size: 0.7rem;
 	order: 4;
 }
+footer .site-info p {
+	margin: 0.5rem 0;
+}
 
 @media screen and (min-width: 45.5em) {
 	footer {
 		padding: 2rem 4rem 0;
+		gap: 0.5rem;
 	}
 	footer .footer-container {
 		flex-direction: row;
@@ -928,7 +932,6 @@ footer .site-info {
 	}
 	footer .footer-container ul {
 		align-items: flex-end;
-		margin-bottom: 1rem;
 	}
 	footer .footer-container .footer-menus {
 		order: 2;

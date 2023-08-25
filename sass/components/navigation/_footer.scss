@@ -65,12 +65,17 @@ footer {
 		color: white;
 		font-size: 0.7rem;
 		order: 4;
+		p {
+			margin: 0.5rem 0;
+		}
 	}
 }
 
 @media screen and (min-width: 45.5em) {
 	footer {
 		padding: 2rem 4rem 0;
+		gap: 0.5rem;
+
 		.footer-container {
 			flex-direction: row;
 			justify-content: space-between;
@@ -78,11 +83,12 @@ footer {
 
 			ul {
 				align-items: flex-end;
-				margin-bottom: 1rem;
 			}
+
 			.footer-menus {
 				order: 2;
 			}
+
 			.footer-logo {
 				order: 1;
 				width: 310px;
