@@ -40,33 +40,68 @@ get_header();
     </section>
 
 	<section class="section-timeline">
+
+<div class="timeline">
+	<div class="container left">
             <?php
             $timeline_section = get_field('timeline_section'); 
 
-			for ($i = 1; $i <= count($timeline_section); $i++) {
-				$conference_key = 'conference_' . $i;
-				$conference = $timeline_section[$conference_key];
-				$conference_name = $conference['conference_name'];
-				$conference_dates = $conference['conference_dates'];
-				$conference_location = $conference['conference_location'];
-				$conference_theme = $conference['conference_theme'];
-				$conference_speakers = $conference['conference_speakers'];
+			 echo '<div class="content">';
+				echo '<h3>' . $timeline_section['conference_1']['conference_name'] . '</h3>';
+				echo '<div class="conference-details">';
 
+				echo '<p><span class="timeline-date">' . $timeline_section['conference_1']['conference_dates'] . '</span></p>';
+				echo '<p>' . $timeline_section['conference_1']['conference_location'] . '</p>';
+				echo '</div>';
+				echo '<h4 class="timeline-heading">Theme</h4>';
+				echo '<p>' . $timeline_section['conference_1']['conference_theme'] . '</p>';
+				echo '<h4 class="timeline-heading">Speakers</h4>';
+				echo '<p>' . $timeline_section['conference_1']['conference_speakers'] . '</p>';
+			echo '</div>';
+			echo '</div>';
 			
 
-				if ($conference) {
-					echo '<div class="conference">';
-			
-					echo '<h3>' . $conference_name . '</h3>';
-					echo '<p>' . $conference_dates . '</p>';
-					echo '<p>' . $conference_location . '</p>';
-					echo '<p>' . $conference_theme . '</p>';
-					echo '<p>' . $conference_speakers . '</p>';
+			echo '<div class="container right">';
+				echo '<div class="content">';
+				echo '<h3>' . $timeline_section['conference_2']['conference_name'] . '</h3>';
+				echo '<div class="conference-details">';
+				echo '<p><span class="timeline-date">' . $timeline_section['conference_2']['conference_dates'] . '</span></p>';
+				echo '<p>' . $timeline_section['conference_2']['conference_location'] . '</p>';
+				echo '</div>';
+				echo '<h4 class="timeline-heading">Theme</h4>';
+				echo '<p>' . $timeline_section['conference_2']['conference_theme'] . '</p>';
+				echo '<h4 class="timeline-heading">Speakers</h4>';
+				echo '<p>' . $timeline_section['conference_2']['conference_speakers'] . '</p>';
+			echo '</div>';
+			echo '</div>';
+			echo '<div class="container left">';
+			echo '<div class="content">';
+				echo '<h3>' . $timeline_section['conference_3']['conference_name'] . '</h3>';
+				echo '<div class="conference-details">';
+				echo '<p><span class="timeline-date">' . $timeline_section['conference_3']['conference_dates'] . '</span></p>';
+				echo '<p>' . $timeline_section['conference_3']['conference_location'] . '</p>';
+				echo '</div>';
+				echo '<h4 class="timeline-heading">Theme</h4>';
+				echo '<p>' . $timeline_section['conference_3']['conference_theme'] . '</p>';
+				echo '<h4 class="timeline-heading">Speakers</h4>';
+				echo '<p>' . $timeline_section['conference_3']['conference_speakers'] . '</p>';
+			echo '</div>';
+			echo '</div>';
+			echo '<div class="container right">';
 
-					echo '</div>';
-				}
-			}
+			echo '<div class="content">';
+				echo '<h3>' . $timeline_section['conference_4']['conference_name'] . '</h3>';
+				echo '<div class="conference-details">';
+				echo '<p><span class="timeline-date">' . $timeline_section['conference_4']['conference_dates'] . '</span></p>';
+				echo '<p>' . $timeline_section['conference_4']['conference_location'] . '</p>';
+				echo '</div>';
+				echo '<h4 class="timeline-heading">Theme</h4>';
+				echo '<p>' . $timeline_section['conference_4']['conference_theme'] . '</p>';
+				echo '<h4 class="timeline-heading">Speakers</h4>';
+				echo '<p>' . $timeline_section['conference_4']['conference_speakers'] . '</p>';
+			echo '</div>';
             ?>
+			</div>
     </section>
 
 	<?php endwhile; // End of the loop. ?>
