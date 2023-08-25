@@ -33,6 +33,15 @@ get_header();
 					echo '<div class="reg-logo"><img src="' . $register_logo['url'] . '" alt="' . $register_logo['alt'] . '"></div>';
 				}
 
+				$register = get_field('register_now_cta');
+				if ($register) {
+					$register_url = $register['url'];
+					$register_title = $register['register_now'];
+					?>
+					<p><a class="cta" href="<?php echo $register_url; ?>"><?php echo $register_title; ?></a></p>
+					<?php
+					}
+
 				$register_subheading = get_field('register_subheading');
 				if ($register_subheading) {
 					echo '<h3>' . $register_subheading . '</h3>';

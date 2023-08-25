@@ -21,3 +21,32 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+.page-id-83 main,
+.page-id-41 main,
+.page-id-130 main {
+	margin-top: 3rem;
+	padding: 2rem;
+}
+
+@media screen and (min-width: 30em) {
+	.page-id-41 main,
+	.page-id-83 main,
+	.page-id-130 main {
+		margin: 5rem 2rem;
+	}
+}
+
+@media screen and (min-width: 55em) {
+	.page-id-41 main,
+	.page-id-83 main,
+	.page-id-130 main {
+		margin: 5.5rem 5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		section {
+			max-width: 780px;
+		}
+	}
+}

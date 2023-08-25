@@ -48,9 +48,8 @@ get_header();
 					$history_link_url = $history_link['url'];
 					$history_link_title = $history_link['title'];
 					?>
-					<p><a class="cta" href="<?php echo $history_link_url; ?>"><?php echo $history_link_title; ?></a></p>
+					<p class="cta-wrap"><a class="cta" href="<?php echo $history_link_url; ?>"><?php echo $history_link_title; ?></a></p>
 					<?php
-
 				}}
             ?>
     </section>

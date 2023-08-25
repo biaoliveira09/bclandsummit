@@ -1,6 +1,4 @@
 .page-id-41 main {
-	margin-top: 3rem;
-	padding: 2rem;
 	ul {
 		margin: 0;
 	}
@@ -31,7 +29,7 @@
 	section.section-about {
 		margin-left: 0;
 		padding: 0;
-		p {
+		p.cta-wrap {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -74,7 +72,6 @@
 
 @media screen and (min-width: 30em) {
 	.page-id-41 main {
-		margin: 5rem 2rem;
 		.board-container {
 			flex-direction: row;
 			gap: 1rem;
@@ -85,12 +82,7 @@
 
 @media screen and (min-width: 55em) {
 	.page-id-41 main {
-		margin: 5.5rem 5rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		section {
-			max-width: 780px;
 			h3 {
 				font-size: 2rem;
 				margin-top: 0.2rem;

@@ -1,5 +1,5 @@
 .page-id-130 main {
-	margin-top: 3rem;
+	margin: 3rem 0;
 	padding: 2rem 1rem;
 
 	ul {
@@ -28,10 +28,19 @@
 		width: fit-content;
 	}
 
-	section {
-		margin-bottom: 3rem;
+	p.cta-wrap {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		a,
+		a:visited {
+			color: white;
+		}
+	}
+}
+
+@media screen and (min-width: 55em) {
+	.section-sponsorship {
+		margin: 3rem 0 1rem;
 	}
 }

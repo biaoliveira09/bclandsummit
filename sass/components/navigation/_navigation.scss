@@ -149,9 +149,11 @@
 		background-color: $bcls__orange;
 		width: fit-content;
 		border-radius: 0.35rem;
-
+		height: 40px;
+		display: flex;
+		align-items: center;
 		color: #fff;
-		padding: 0.5rem 1rem;
+		padding: 0.5rem;
 		font-weight: 500;
 		a,
 		a:visited {

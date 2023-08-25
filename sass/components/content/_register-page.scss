@@ -8,6 +8,7 @@
 	height: 100vh;
 	position: relative;
 	color: white;
+	margin-top: 4rem;
 
 	&::after {
 		content: '';
@@ -26,6 +27,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		padding: 2rem 0;
 		height: 100%;
 	}
 
@@ -54,13 +56,26 @@
 	}
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 43em) {
 	.section-register {
+		margin-top: 5rem;
 		h2 {
 			padding-top: 5rem;
 		}
 		img {
-			height: 400px;
+			height: 350px;
+		}
+		h3 {
+			padding-bottom: 8rem;
+		}
+	}
+}
+
+@media screen and (min-width: 43em) {
+	.section-register {
+		margin-top: 8rem;
+		.reg-container {
+			padding: 9rem 0;
 		}
 	}
 }

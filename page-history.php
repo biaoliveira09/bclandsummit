@@ -25,6 +25,10 @@ get_header();
 				if ($history_heading) {
 					echo '<h2>' . $history_heading . '</h2>';
                 }
+				$history_subheading = get_field('history_section')['history_subheading'];
+				if ($history_subheading) {
+					echo '<h3>' . $history_subheading . '</h3>';
+                }
 
 				$history_content = get_field('history_section')['history_text'];
 				if ($history_content) {
