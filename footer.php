@@ -13,7 +13,7 @@
 </div> 
 	<footer id="colophon" class="site-footer">
 	<div class="footer-container">
-			<img src="https://raw.githubusercontent.com/biaoliveira09/bclandsummit/d7b7ac1635ba6576cd81f7573bd20f59b9c00811/assets/white-main-logo.png" alt="BC Land Summit Logo" class="footer-logo">
+			<img src="https://raw.githubusercontent.com/biaoliveira09/bclandsummit/1565f8f23b7ef877043e3ec4cc06d9089f3abd60/assets/white-main-logo.webp" alt="BC Land Summit Logo" class="footer-logo">
 			<?php 
 			wp_nav_menu(
 				array(
