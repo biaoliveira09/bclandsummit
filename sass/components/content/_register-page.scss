@@ -12,7 +12,11 @@
 
 	&::after {
 		content: '';
-		background: rgba(88, 66, 154, 0.8);
+		background-image: linear-gradient(
+			to bottom,
+			rgba(79, 56, 146, 0.85),
+			rgba(51, 24, 133, 0.875)
+		);
 		position: absolute;
 		top: 0;
 		right: 0;
