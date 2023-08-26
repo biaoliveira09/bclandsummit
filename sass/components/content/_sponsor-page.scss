@@ -24,13 +24,11 @@
 		font-size: 1.4rem;
 	}
 
-	a {
+	a.button {
 		background-color: $bcls__purple;
-		padding: 0.5rem 1rem;
-		border-radius: 0.35rem;
-		color: #fff;
-		text-decoration: none;
-		width: fit-content;
+		&:hover {
+			background-color: darken($bcls__purple, 5%);
+		}
 	}
 
 	p.cta-wrap {
