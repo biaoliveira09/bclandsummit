@@ -10,7 +10,6 @@
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			// float: left;
 			position: absolute;
 			top: 100%;
 			left: -999em;
@@ -29,17 +28,10 @@
 				}
 
 				a,
-				a:visited {
+				a:visited,
+				a:hover {
 					width: 200px;
 					color: black;
-				}
-
-				:hover > a,
-				.focus > a {
-				}
-
-				a:hover,
-				a.focus {
 				}
 			}
 		}
@@ -52,11 +44,6 @@
 
 	li {
 		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-			color: black;
-		}
 	}
 
 	a {
@@ -137,7 +124,7 @@
 	width: 40px;
 }
 
-.menu-item-157 {
+nav li:nth-child(3) {
 	background-color: $bcls__orange;
 }
 
@@ -145,7 +132,7 @@
 	.menu-toggle {
 		display: none;
 	}
-	.menu-item-157 {
+	nav li:nth-child(3) {
 		background-color: $bcls__orange;
 		width: fit-content;
 		border-radius: 0.35rem;
@@ -155,6 +142,9 @@
 		color: #fff;
 		padding: 0.5rem;
 		font-weight: 500;
+		&:hover {
+			background-color: darken($bcls__orange, 5%);
+		}
 		a,
 		a:visited,
 		a:hover {
@@ -195,6 +185,11 @@
 				right: 0;
 				display: flex;
 				flex-direction: row;
+				li {
+					&:hover {
+						letter-spacing: 1.2px;
+					}
+				}
 			}
 		}
 	}
@@ -236,7 +231,7 @@ button.menu-toggle {
 	height: 5px;
 	width: 100%;
 	background: black;
-	border-radius: 1px;
+	border-radius: 2px;
 	opacity: 1;
 	left: 0;
 	-webkit-transform: rotate(0deg);

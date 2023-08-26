@@ -39,7 +39,7 @@
 
 		<div class="site-info">
 			<p>Copyright © 2023 BC Land Summit Society</a>
-			<p>Website by <a href="">WireDaze Studio</a></p>
+			<p>Website by <a href="https://biaoliveira.com/">WireDaze Studio</a></p>
 			
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

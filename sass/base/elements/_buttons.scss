@@ -1,9 +1,10 @@
 .cta,
 .register-page-btn {
 	background-color: $bcls__orange;
-	padding: 0.5rem 0.7rem;
+	padding: 0.5rem 1rem;
 	border-radius: 0.4rem;
 	width: fit-content;
+	z-index: 8;
 	&:hover {
 		background-color: darken($bcls__orange, 5%);
 	}
