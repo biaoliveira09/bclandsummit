@@ -58,6 +58,7 @@
 	.venue-pics {
 		display: flex;
 		flex-wrap: wrap;
+		z-index: 2;
 
 		img {
 			width: 100%;
@@ -68,11 +69,12 @@
 @media screen and (min-width: 55em) {
 	.section-info {
 		flex-direction: row;
-
+		justify-content: space-between;
 		.info-container {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			width: 100%;
 
 			.venue-pics {
 				max-width: 30%;

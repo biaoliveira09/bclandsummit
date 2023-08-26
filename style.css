@@ -1261,6 +1261,7 @@ footer .site-info p {
 .section-info .venue-pics {
 	display: flex;
 	flex-wrap: wrap;
+	z-index: 2;
 }
 .section-info .venue-pics img {
 	width: 100%;
@@ -1269,11 +1270,13 @@ footer .site-info p {
 @media screen and (min-width: 55em) {
 	.section-info {
 		flex-direction: row;
+		justify-content: space-between;
 	}
 	.section-info .info-container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		width: 100%;
 	}
 	.section-info .info-container .venue-pics {
 		max-width: 30%;
