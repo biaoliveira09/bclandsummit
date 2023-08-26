@@ -13,6 +13,9 @@
 		align-items: center;
 		justify-content: center;
 		gap: 1rem;
+		img {
+			border: 10px solid $bcls__orange;
+		}
 	}
 }
 
@@ -30,7 +33,6 @@
 			width: 50%;
 
 			img {
-				border: 10px solid $bcls__orange;
 				width: 400px;
 			}
 		}

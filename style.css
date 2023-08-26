@@ -1884,6 +1884,9 @@ footer .site-info p {
 	justify-content: center;
 	gap: 1rem;
 }
+.section-pag .pag-images img {
+	border: 10px solid #e56f17;
+}
 
 @media screen and (min-width: 52em) {
 	.section-pag .pag-container {
@@ -1898,7 +1901,6 @@ footer .site-info p {
 		width: 50%;
 	}
 	.section-pag .pag-images img {
-		border: 10px solid #e56f17;
 		width: 400px;
 	}
 }
