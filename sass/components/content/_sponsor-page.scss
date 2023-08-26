@@ -17,15 +17,19 @@
 		height: 100%;
 		background-image: linear-gradient(
 			to bottom,
-			rgba(79, 56, 146, 0.85),
-			rgba(51, 24, 133, 0.875)
+			rgba(56, 32, 128, 0.803),
+			rgba(51, 24, 133, 0.812)
 		);
 		z-index: 1;
 	}
-
-	.sponsorship-text {
-		position: relative;
-		z-index: 2;
+	.section-sponsorship {
+		min-height: 75vh;
+		display: flex;
+		align-items: center;
+		.sponsorship-text {
+			position: relative;
+			z-index: 2;
+		}
 	}
 
 	ul {
@@ -66,6 +70,10 @@
 @media screen and (min-width: 41.875em) {
 	.page-id-130 main {
 		margin: 5rem 0 0;
+		.section-sponsorship {
+			flex-direction: column;
+			justify-content: center;
+		}
 	}
 }
 

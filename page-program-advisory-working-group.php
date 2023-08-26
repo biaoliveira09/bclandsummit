@@ -20,7 +20,9 @@ get_header();
 	<?php while (have_posts()) : the_post(); ?>
 		
 	<section class="section-pag">
-            <?php
+            <div class="pag-container">
+			<div class="pag-text">
+			<?php
             if (function_exists('get_field')) {
                 $pag_heading = get_field('program_advisory_heading');
 				if ($pag_heading) {
@@ -40,9 +42,22 @@ get_header();
 										<a class="button" href="<?php echo $tofr_url; ?>"><?php echo $tofr_title; ?></a>
 										<?php
                 }
+				echo '</div>';
+				echo "<div class='pag-images'>";
+				$pag_image1 = get_field('image_1');
+					if ($pag_image1) {
+						echo '<img src="' . $pag_image1['url'] . '" alt="'.$pag_image1['alt'].'">';
+					}
+					$pag_image2 = get_field('image_2');
 
+					if ($pag_image2) {
+						echo '<img src="' . $pag_image2['url'] . '" alt="'.$pag_image2['alt'].'">';
+					}
+				echo "</div>";
             }
             ?>
+			</div>
+
     </section>
 
 	<?php endwhile; // End of the loop. ?>

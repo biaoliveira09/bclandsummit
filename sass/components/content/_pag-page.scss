@@ -5,4 +5,43 @@
 			background-color: darken($bcls__purple, 5%);
 		}
 	}
+
+	.pag-images {
+		margin: 2rem 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+	}
+}
+
+@media screen and (min-width: 52em) {
+	.section-pag {
+		.pag-container {
+			display: flex;
+			align-items: center;
+			.pag-text {
+				margin: 0 2rem;
+				width: 70%;
+			}
+		}
+		.pag-images {
+			width: 50%;
+
+			img {
+				border: 10px solid $bcls__orange;
+				width: 400px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 55em) {
+	.section-pag {
+		margin: 5.5rem 3.5rem;
+		.pag-container .pag-text {
+			width: 600px;
+		}
+	}
 }
