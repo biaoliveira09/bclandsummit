@@ -1634,7 +1634,10 @@ footer .site-info p {
 	margin: 3rem 0;
 	padding: 2rem 1rem;
 	position: relative;
-	background-image: url();
+	background-image: url(https://raw.githubusercontent.com/biaoliveira09/bclandsummit/ab98328251110864313379a152bd3a11791b09a6/assets/opportunity.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 .page-id-130 main .sponsorship-text {
 	z-index: 2;
