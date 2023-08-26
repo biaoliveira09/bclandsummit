@@ -68,7 +68,7 @@ get_header();
 					if ($whats_happening_text) {
 						echo '<div>' . $whats_happening_text . '</div></div>';
 					}
-				?> </div></div>
+				?> </div>
 				<div class="venue-pics">
 					<?php
 					$venue_picture = get_field('whats_happening_section')['venue_picture'];
@@ -81,6 +81,7 @@ get_header();
 					}
 				}
             ?>
+			</div>
 			</div>
         </section>
 		<section class="section-attend">

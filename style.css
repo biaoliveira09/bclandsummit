@@ -1189,23 +1189,24 @@ footer .site-info p {
 	.section-info {
 		flex-direction: row;
 	}
-	.section-info img {
-		max-height: 380px;
-		width: 45%;
-	}
 	.section-info .info-container {
-		padding: 6rem 2rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
-	.section-info .info-text {
-		padding: 2rem;
+	.section-info .info-container .venue-pics {
+		max-width: 30%;
+	}
+	.section-info .info-container .info-text {
+		margin: 0 auto;
 		max-width: 570px;
 	}
-	.section-info .info-text h2 {
+	.section-info .info-container .info-text h2 {
 		display: inline-block;
 		letter-spacing: 1px;
 		text-align: center;
 	}
-	.section-info .info-text h3 {
+	.section-info .info-container .info-text h3 {
 		font-size: 1.5rem;
 	}
 }
