@@ -1631,15 +1631,28 @@ footer .site-info p {
 	}
 }
 .page-id-130 main {
-	margin: 3rem 0;
+	margin: 3rem 0 0;
 	padding: 2rem 1rem;
 	position: relative;
-	background-image: url(https://raw.githubusercontent.com/biaoliveira09/bclandsummit/2364c0b8b9d438980e1046c054c2aa5dd5cb6a04/assets/moon.jpeg);
+	background-image: url(https://github.com/biaoliveira09/bclandsummit/blob/4a0498c94731ebe236d95b2063a713d864f0da97/assets/mooncatcher.jpeg?raw=true);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	color: white;
+	z-index: 0;
+}
+.page-id-130 main::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, rgba(111, 94, 164, 0.875), rgba(48, 34, 90, 0.95));
+	z-index: 1;
 }
 .page-id-130 main .sponsorship-text {
+	position: relative;
 	z-index: 2;
 }
 .page-id-130 main ul {
@@ -1650,17 +1663,17 @@ footer .site-info p {
 	font-weight: 500;
 	font-size: 1.3rem;
 	letter-spacing: 1px;
-	color: #58429a;
+	color: #e56f17;
 	font-family: "Poppins", sans-serif;
 }
 .page-id-130 main h3 {
 	font-size: 1.4rem;
 }
 .page-id-130 main a.button {
-	background-color: #58429a;
+	background-color: #e56f17;
 }
 .page-id-130 main a.button:hover {
-	background-color: #4e3a88;
+	background-color: #ce6415;
 }
 .page-id-130 main p.cta-wrap {
 	display: flex;
@@ -1674,15 +1687,12 @@ footer .site-info p {
 
 @media screen and (min-width: 41.875em) {
 	.page-id-130 main {
-		margin: 5rem 0;
-	}
-	.page-id-130 main::after {
-		background-size: 450px;
+		margin: 5rem 0 0;
 	}
 }
 @media screen and (min-width: 55em) {
 	.section-sponsorship {
-		margin: 3rem 0 1rem;
+		margin: 3rem 0 0;
 	}
 }
 .page-id-83 main h2 {
