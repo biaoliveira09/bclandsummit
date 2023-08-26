@@ -1435,7 +1435,6 @@ footer .site-info p {
 	flex-direction: column;
 	align-items: center;
 	flex-wrap: wrap;
-	align-items: stretch;
 	font-family: "Lora", serif;
 	font-weight: 700;
 }
