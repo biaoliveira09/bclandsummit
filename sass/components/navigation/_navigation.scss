@@ -156,9 +156,13 @@
 		padding: 0.5rem;
 		font-weight: 500;
 		a,
-		a:visited {
+		a:visited,
+		a:hover {
 			color: #fff;
 		}
+		// &:hover {
+		// 	background-color: darken($bcls__orange, 5%);
+		// }
 	}
 
 	.site-header {

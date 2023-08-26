@@ -626,10 +626,14 @@ nav a {
 .cta,
 .register-page-btn {
 	background-color: #e56f17;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 0.7rem;
 	border-radius: 0.4rem;
 	width: -moz-fit-content;
 	width: fit-content;
+}
+.cta:hover,
+.register-page-btn:hover {
+	background-color: #ce6415;
 }
 .cta a,
 .register-page-btn a {
@@ -833,7 +837,8 @@ textarea {
 		font-weight: 500;
 	}
 	.menu-item-157 a,
-	.menu-item-157 a:visited {
+	.menu-item-157 a:visited,
+	.menu-item-157 a:hover {
 		color: #fff;
 	}
 	.site-header {
@@ -1744,6 +1749,7 @@ footer .site-info p {
 
 .middle {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	margin-top: 4rem;

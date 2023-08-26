@@ -117,7 +117,7 @@ get_header();
 					$register_cta_url = $register_cta['url'];
 										$register_cta_title = $register_cta['title'];
 										?>
-										<a href="<?php echo $register_cta_url; ?>" class="cta"><?php echo $register_cta_title; ?></a>
+										<p class="register-page-btn"><a href="<?php echo $register_cta_url; ?>" class="cta"><?php echo $register_cta_title; ?></a></p>
 										<?php
 				}}
 			

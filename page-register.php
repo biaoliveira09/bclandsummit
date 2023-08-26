@@ -38,7 +38,7 @@ get_header();
 					$register_url = $register['url'];
 					$register_title = $register['register_now'];
 					?>
-					<p><a class="cta" href="<?php echo $register_url; ?>"><?php echo $register_title; ?></a></p>
+					<p class="register-page-btn"><a class="cta" href="<?php echo $register_url; ?>"><?php echo $register_title; ?></a></p>
 					<?php
 					}
 
