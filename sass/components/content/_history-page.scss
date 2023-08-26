@@ -16,6 +16,12 @@
 	.section-history {
 		margin-bottom: 3rem;
 	}
+	a.button {
+		background-color: $bcls__orange;
+		&:hover {
+			background-color: darken($bcls__orange, 5%);
+		}
+	}
 }
 
 @media screen and (min-width: 55em) {

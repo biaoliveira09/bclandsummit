@@ -43,7 +43,7 @@ get_header();
                     $contact_us_cta_url = $contact_us_cta['url'];
 										$contact_us_cta_title = $contact_us_cta['title'];
 										?>
-										<p class="cta-wrap"><a href="<?php echo $contact_us_cta_url; ?>"><?php echo $contact_us_cta_title; ?></a>
+										<p class="cta-wrap"><a class="button" href="<?php echo $contact_us_cta_url; ?>"><?php echo $contact_us_cta_title; ?></a>
 										<?php
                 }
 

@@ -1,0 +1,8 @@
+.section-pag {
+	a.button {
+		background-color: $bcls__purple;
+		&:hover {
+			background-color: darken($bcls__purple, 5%);
+		}
+	}
+}

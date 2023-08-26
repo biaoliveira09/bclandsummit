@@ -661,6 +661,13 @@ nav a {
 	outline: 0;
 }
 
+a.button {
+	padding: 0.5rem 1rem;
+	border-radius: 0.35rem;
+	color: #fff;
+	text-decoration: none;
+}
+
 input[type=text],
 input[type=email],
 input[type=url],
@@ -759,6 +766,7 @@ textarea {
 	display: block;
 	text-decoration: none;
 }
+
 .site-header {
 	position: fixed !important;
 	background-color: white;
@@ -873,9 +881,6 @@ nav li:nth-child(3) {
 		right: 0;
 		display: flex;
 		flex-direction: row;
-	}
-	.site-header .menu-main-menu-container ul li:hover {
-		letter-spacing: 1.2px;
 	}
 }
 @media screen and (min-width: 42em) {
@@ -1172,6 +1177,12 @@ footer .site-info p {
 .section-hero a:visited {
 	color: white;
 }
+.section-hero a.button {
+	background-color: #e56f17;
+}
+.section-hero a.button:hover {
+	background-color: #ce6415;
+}
 
 @media screen and (min-width: 40em) {
 	.section-hero {
@@ -1445,12 +1456,11 @@ footer .site-info p {
 	font-size: 1.5rem;
 	margin-bottom: 0;
 }
-.section-involved a {
+.section-involved a.button {
 	background-color: #58429a;
-	padding: 0.5rem 1rem;
-	border-radius: 0.35rem;
-	color: #fff;
-	text-decoration: none;
+}
+.section-involved a.button:hover {
+	background-color: #4e3a88;
 }
 
 @media screen and (min-width: 40em) {
@@ -1519,6 +1529,12 @@ footer .site-info p {
 	font-style: italic;
 	color: #58429a;
 	font-weight: 400;
+}
+.page-id-41 main a.button {
+	background-color: #e56f17;
+}
+.page-id-41 main a.button:hover {
+	background-color: #ce6415;
 }
 
 @media screen and (min-width: 30em) {
@@ -1618,6 +1634,7 @@ footer .site-info p {
 	margin: 3rem 0;
 	padding: 2rem 1rem;
 	position: relative;
+	background-image: url();
 }
 .page-id-130 main .sponsorship-text {
 	z-index: 2;
@@ -1636,14 +1653,11 @@ footer .site-info p {
 .page-id-130 main h3 {
 	font-size: 1.4rem;
 }
-.page-id-130 main a {
+.page-id-130 main a.button {
 	background-color: #58429a;
-	padding: 0.5rem 1rem;
-	border-radius: 0.35rem;
-	color: #fff;
-	text-decoration: none;
-	width: -moz-fit-content;
-	width: fit-content;
+}
+.page-id-130 main a.button:hover {
+	background-color: #4e3a88;
 }
 .page-id-130 main p.cta-wrap {
 	display: flex;
@@ -1682,6 +1696,12 @@ footer .site-info p {
 }
 .page-id-83 main .section-history {
 	margin-bottom: 3rem;
+}
+.page-id-83 main a.button {
+	background-color: #e56f17;
+}
+.page-id-83 main a.button:hover {
+	background-color: #ce6415;
 }
 
 @media screen and (min-width: 55em) {
@@ -1822,6 +1842,13 @@ footer .site-info p {
 	align-items: center;
 	justify-content: center;
 	margin-top: 4rem;
+}
+
+.section-pag a.button {
+	background-color: #58429a;
+}
+.section-pag a.button:hover {
+	background-color: #4e3a88;
 }
 
 /* Comments

@@ -37,7 +37,7 @@ get_header();
                     $tofr_url = $tofr['url'];
 										$tofr_title = $tofr['title'];
 										?>
-										<a href="<?php echo $tofr_url; ?>"><?php echo $tofr_title; ?></a>
+										<a class="button" href="<?php echo $tofr_url; ?>"><?php echo $tofr_title; ?></a>
 										<?php
                 }
 

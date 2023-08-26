@@ -68,6 +68,13 @@
 			color: white;
 		}
 	}
+
+	a.button {
+		background-color: $bcls__orange;
+		&:hover {
+			background-color: darken($bcls__orange, 5%);
+		}
+	}
 }
 
 @media screen and (min-width: 40em) {
