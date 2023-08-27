@@ -1633,9 +1633,6 @@ footer .site-info p {
 	}
 }
 @media screen and (min-width: 43em) {
-	.section-register {
-		margin-top: 8rem;
-	}
 	.section-register .reg-container {
 		padding: 9rem 0;
 	}
