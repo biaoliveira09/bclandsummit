@@ -913,7 +913,7 @@ button.menu-toggle {
 #nav-icon span {
 	display: block;
 	position: absolute;
-	height: 5px;
+	height: 3.5px;
 	width: 100%;
 	background: black;
 	border-radius: 2px;
@@ -924,17 +924,17 @@ button.menu-toggle {
 }
 
 #nav-icon span:nth-child(1) {
-	top: 0px;
+	top: -1px;
 	transform-origin: left center;
 }
 
 #nav-icon span:nth-child(2) {
-	top: 14px;
+	top: 13px;
 	transform-origin: left center;
 }
 
 #nav-icon span:nth-child(3) {
-	top: 29px;
+	top: 28px;
 	transform-origin: left center;
 }
 
@@ -1118,7 +1118,7 @@ footer .site-info p {
 	position: relative;
 	margin-top: 4rem;
 	padding: 4rem 1rem;
-	height: 470px;
+	height: 95vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1188,7 +1188,7 @@ footer .site-info p {
 @media screen and (min-width: 40em) {
 	.section-hero {
 		margin-top: 6rem;
-		height: 690px;
+		height: 90vh;
 	}
 	.section-hero h2 {
 		font-size: 2rem;
