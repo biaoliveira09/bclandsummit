@@ -743,6 +743,7 @@ textarea {
 }
 .main-navigation ul li#menu-item-258 a {
 	padding: 1rem;
+	margin: 0;
 }
 .main-navigation ul li#menu-item-258 ul.sub-menu {
 	margin: 0;
@@ -751,7 +752,6 @@ textarea {
 }
 .main-navigation ul li#menu-item-258 ul.sub-menu a {
 	padding: 0;
-	margin-left: 1rem;
 }
 .main-navigation li {
 	position: relative;
@@ -875,7 +875,7 @@ nav li#menu-item-157 {
 		display: flex;
 		flex-direction: row;
 	}
-	li#menu-item-258 ul {
+	li#menu-item-258 ul.sub-menu {
 		display: none;
 		position: absolute;
 		top: 100%;
@@ -884,10 +884,10 @@ nav li#menu-item-157 {
 		width: -moz-fit-content;
 		width: fit-content;
 	}
-	li#menu-item-258 ul li {
+	li#menu-item-258 ul.sub-menu li {
 		background-color: white;
 	}
-	li#menu-item-258 ul li:hover {
+	li#menu-item-258 ul.sub-menu li:hover {
 		background-color: #f5f5f5;
 	}
 	li#menu-item-258:hover ul {
