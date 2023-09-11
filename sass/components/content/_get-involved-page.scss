@@ -1,0 +1,11 @@
+.section-involved-page {
+	a.button {
+		background-color: $bcls__purple;
+		&:hover {
+			background-color: darken($bcls__purple, 5%);
+		}
+	}
+	article {
+		margin: 0 0 4rem;
+	}
+}

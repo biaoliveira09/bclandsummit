@@ -27,10 +27,14 @@
 .page-id-130 main,
 .error404 main,
 .page-id-242 main,
-.page-id-247 main,
 .page-id-142 main {
 	margin-top: 3rem;
 	padding: 2rem;
+}
+
+.page-id-247 main {
+	margin-top: 2rem;
+	padding: 1rem;
 }
 
 @media screen and (min-width: 30em) {
@@ -38,10 +42,12 @@
 	.page-id-83 main,
 	.page-id-130 main,
 	.error404 main,
-	.page-id-247 main,
 	.page-id-242 main,
 	.page-id-142 main {
 		margin: 4rem 2rem;
+	}
+	.page-id-247 main {
+		margin: 2rem 1rem;
 	}
 }
 
@@ -49,10 +55,12 @@
 	.page-id-41 main,
 	.page-id-83 main,
 	.error404 main,
-	.page-id-247 main,
 	.page-id-242 main,
 	.page-id-130 main {
 		margin: 5.5rem 2.2rem;
+	}
+	.page-id-247 main {
+		margin: 2rem 1.3rem;
 	}
 }
 
@@ -60,14 +68,22 @@
 	.page-id-41 main,
 	.page-id-83 main,
 	.error404 main,
-	.page-id-247 main,
 	.page-id-242 main,
+	.page-id-247 main,
 	.page-id-130 main {
 		margin: 5.5rem 5rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-
+		section {
+			max-width: 780px;
+		}
+	}
+	.page-id-247 main {
+		margin: 2.3rem 5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		section {
 			max-width: 780px;
 		}
