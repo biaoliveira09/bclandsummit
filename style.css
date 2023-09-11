@@ -738,15 +738,20 @@ textarea {
 	margin: 0;
 	padding-left: 0;
 }
-.main-navigation ul ul {
-	position: absolute;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
+.main-navigation ul li#menu-item-258 {
+	padding: 0;
 }
-.main-navigation ul ul ul.sub-menu {
-	left: -999em;
-	top: 0;
+.main-navigation ul li#menu-item-258 a {
+	padding: 1rem;
+}
+.main-navigation ul li#menu-item-258 ul.sub-menu {
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+}
+.main-navigation ul li#menu-item-258 ul.sub-menu a {
+	padding: 0;
+	margin-left: 1rem;
 }
 .main-navigation li {
 	position: relative;
@@ -785,7 +790,6 @@ textarea {
 .site-header .menu-main-menu-container ul {
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
 	list-style-type: none;
 	margin: 0;
 }
