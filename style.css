@@ -2056,6 +2056,17 @@ footer .site-info p {
 	color: #58429a;
 	font-family: "Poppins", sans-serif;
 }
+.page-id-296 nav a,
+.page-id-296 nav a:visited {
+	color: black;
+}
+.page-id-296 a,
+.page-id-296 a:visited {
+	color: #58429a;
+}
+.page-id-296 .entry-content a:hover {
+	text-decoration: underline;
+}
 
 /* Comments
 --------------------------------------------- */

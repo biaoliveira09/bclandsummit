@@ -7,4 +7,17 @@
 		color: $bcls__purple;
 		font-family: 'Poppins', sans-serif;
 	}
+	nav a,
+	nav a:visited {
+		color: black;
+	}
+
+	a,
+	a:visited {
+		color: $bcls__purple;
+	}
+
+	.entry-content a:hover {
+		text-decoration: underline;
+	}
 }
