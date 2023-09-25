@@ -27,13 +27,17 @@
 .page-id-130 main,
 .error404 main,
 .page-id-242 main,
-.page-id-142 main {
+.page-id-142 main,
+.page-id-311 main {
 	margin-top: 3rem;
 	padding: 2rem;
 }
 
 .page-id-247 main,
-.page-template-page-webinars main {
+.page-template-page-webinars main,
+.single-webinar main,
+.page-id-296 main,
+.page-id-296 main {
 	margin-top: 2rem;
 	padding: 1rem;
 }
@@ -48,7 +52,9 @@
 		margin: 4rem 2rem;
 	}
 	.page-id-247 main,
-	.page-template-page-webinars main {
+	.page-template-page-webinars main,
+	.single-webinar main,
+	.page-id-296 main {
 		margin: 3rem 1rem;
 	}
 }
@@ -58,11 +64,14 @@
 	.page-id-83 main,
 	.error404 main,
 	.page-id-242 main,
-	.page-id-130 main {
+	.page-id-130 main,
+	.page-id-311 main {
 		margin: 5.5rem 2.2rem;
 	}
 	.page-id-247 main,
-	.page-template-page-webinars main {
+	.page-template-page-webinars main,
+	.single-webinar main,
+	.page-id-296 main {
 		margin: 3rem 1.3rem;
 	}
 }
@@ -74,7 +83,9 @@
 	.page-id-242 main,
 	.page-id-247 main,
 	.page-template-page-webinars main,
-	.page-id-130 main {
+	.page-id-130 main,
+	.single-webinar main,
+	.page-id-311 main {
 		margin: 5.5rem 5rem;
 		display: flex;
 		flex-direction: column;
@@ -84,7 +95,8 @@
 		}
 	}
 	.page-id-247 main,
-	.page-template-page-webinars main {
+	.page-template-page-webinars main,
+	.page-id-296 main {
 		margin: 2.5rem 5rem;
 		display: flex;
 		flex-direction: column;
@@ -94,7 +106,8 @@
 		}
 	}
 
-	.page-template-page-webinars main {
+	.page-template-page-webinars main,
+	.page-id-296 main {
 		margin-top: 4.5rem;
 	}
 }

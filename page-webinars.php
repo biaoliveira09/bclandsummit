@@ -18,7 +18,7 @@ get_header();
 	<main id="primary" class="site-main">
 
 		<section class="section-webinars">
-		<h2>Webinars</h2>
+		<h1>Webinars</h1>
 		<?php
 		/*Template Name: Webinar Template*/
 		get_header();

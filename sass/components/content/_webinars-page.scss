@@ -1,11 +1,39 @@
 .section-webinars {
-	a.button {
-		background-color: $bcls__purple;
-		&:hover {
-			background-color: darken($bcls__purple, 5%);
-		}
+	h1 {
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 1.3rem;
+		letter-spacing: 1px;
+		color: $bcls__purple;
+		font-family: 'Poppins', sans-serif;
 	}
 	article {
 		margin: 0 0 3rem;
+		a {
+			color: black;
+			&.button {
+				background-color: $bcls__purple;
+				color: white;
+				&:hover {
+					background-color: darken($bcls__purple, 5%);
+				}
+			}
+		}
+	}
+}
+.single-webinar main .entry-header {
+	max-width: 800px;
+}
+.webinar-post {
+	.webinar-date {
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 1rem;
+		letter-spacing: 1px;
+		color: $bcls__purple;
+		font-family: 'Poppins', sans-serif;
+	}
+	a {
+		color: $bcls__purple;
 	}
 }

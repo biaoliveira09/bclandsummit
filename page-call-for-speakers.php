@@ -23,7 +23,7 @@ get_header();
 		 if (function_exists('get_field')) {
                 $call_for_speakers_heading = get_field('call_for_speakers_heading');
                 if ($call_for_speakers_heading) {
-                    echo '<h2>' . $call_for_speakers_heading . '</h2>';
+                    echo '<h1>' . $call_for_speakers_heading . '</h1>';
                 }
 
                 $call_for_speakers_text = get_field('call_for_speakers_text');
