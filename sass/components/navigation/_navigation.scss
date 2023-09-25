@@ -20,13 +20,15 @@
 		// 	// 	top: 0;
 		// 	// }
 		// }
-		li#menu-item-258 {
+		li#menu-item-258,
+		li#menu-item-301 {
 			padding: 0;
 			a {
 				padding: 1rem;
 				margin: 0;
 			}
 			ul.sub-menu {
+				display: block;
 				margin: 0;
 				padding: 0;
 				background-color: #f5f5f5;
@@ -179,7 +181,8 @@ nav li#menu-item-157 {
 		}
 	}
 
-	li#menu-item-258 {
+	li#menu-item-258,
+	li#menu-item-301 {
 		ul.sub-menu {
 			display: none;
 			position: absolute;
