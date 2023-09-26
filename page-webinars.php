@@ -34,7 +34,7 @@ get_header();
 		<article class="webinar">
 		<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 		<p><?php the_excerpt(); ?></p>
-		<p><a href="<?php the_permalink() ?>" class="button">Read More</a></p>
+		<p><a href="<?php the_permalink() ?>" class="button">Watch Webinar</a></p>
 			</article>
 		<?php 
 			endwhile;
