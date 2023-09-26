@@ -31,7 +31,7 @@ get_header();
 			echo '</section>';
 
 		
-			echo '<a href="' . get_post_type_archive_link( 'webinar' ) . '">Back to Webinars</a>';
+			echo '<a href="http://biaoliveira.com/bclandsummit/webinars/">Back to Webinars</a>';
 
 		endwhile; // End of the loop.
 		?>

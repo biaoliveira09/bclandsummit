@@ -22,57 +22,39 @@
 	margin: 0 0 1.5em;
 }
 
-.page-id-83 main,
-.page-id-41 main,
-.page-id-130 main,
-.error404 main,
-.page-id-242 main,
-.page-id-142 main,
-.page-id-311 main {
-	margin-top: 3rem;
-	padding: 2rem;
-}
-
-.page-id-247 main,
-.page-template-page-webinars main,
-.single-webinar main,
-.page-id-296 main,
-.page-id-296 main {
-	margin-top: 2rem;
+.page main {
+	margin-top: 4rem;
 	padding: 1rem;
 }
 
+.home main,
+.page-id-120 main {
+	margin-top: 2rem;
+	padding: 0;
+}
+
 @media screen and (min-width: 30em) {
-	.page-id-41 main,
-	.page-id-83 main,
-	.page-id-130 main,
-	.error404 main,
-	.page-id-242 main,
-	.page-id-142 main {
-		margin: 4rem 2rem;
+	.page main {
+		margin-top: 4rem;
+		padding: 2rem;
 	}
-	.page-id-247 main,
-	.page-template-page-webinars main,
-	.single-webinar main,
-	.page-id-296 main {
-		margin: 3rem 1rem;
+	.home main,
+	.page-id-120 main {
+		margin-top: 1rem;
+		padding: 0;
 	}
 }
 
 @media screen and (min-width: 41.75em) {
-	.page-id-41 main,
-	.page-id-83 main,
-	.error404 main,
-	.page-id-242 main,
-	.page-id-130 main,
-	.page-id-311 main {
-		margin: 5.5rem 2.2rem;
+	.page main {
+		margin: 4rem 2rem 0;
+		padding: 2rem;
 	}
-	.page-id-247 main,
-	.page-template-page-webinars main,
-	.single-webinar main,
-	.page-id-296 main {
-		margin: 3rem 1.3rem;
+	.home main,
+	.page-id-120 main {
+		margin-top: 2rem;
+		padding: 0;
+		margin: 0;
 	}
 }
 
@@ -85,7 +67,9 @@
 	.page-template-page-webinars main,
 	.page-id-130 main,
 	.single-webinar main,
-	.page-id-311 main {
+	.page-id-311 main,
+	.page-id-296 main,
+	.page-id-307 main {
 		margin: 5.5rem 5rem;
 		display: flex;
 		flex-direction: column;
@@ -94,21 +78,11 @@
 			max-width: 780px;
 		}
 	}
-	.page-id-247 main,
-	.page-template-page-webinars main,
-	.page-id-296 main {
-		margin: 2.5rem 5rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		section {
-			max-width: 780px;
-		}
-	}
-
-	.page-template-page-webinars main,
-	.page-id-296 main {
-		margin-top: 4.5rem;
+	.home main,
+	.page-id-120 main {
+		margin-top: 2rem;
+		padding: 0;
+		margin: 0;
 	}
 }
 

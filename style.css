@@ -825,7 +825,7 @@ nav li#menu-item-157 {
 	background-color: #e56f17;
 }
 
-@media screen and (min-width: 45.5em) {
+@media screen and (min-width: 48em) {
 	.menu-toggle {
 		display: none;
 	}
@@ -1102,56 +1102,38 @@ footer .site-info p {
 	margin: 0 0 1.5em;
 }
 
-.page-id-83 main,
-.page-id-41 main,
-.page-id-130 main,
-.error404 main,
-.page-id-242 main,
-.page-id-142 main,
-.page-id-311 main {
-	margin-top: 3rem;
-	padding: 2rem;
-}
-
-.page-id-247 main,
-.page-template-page-webinars main,
-.single-webinar main,
-.page-id-296 main,
-.page-id-296 main {
-	margin-top: 2rem;
+.page main {
+	margin-top: 4rem;
 	padding: 1rem;
 }
 
+.home main,
+.page-id-120 main {
+	margin-top: 2rem;
+	padding: 0;
+}
+
 @media screen and (min-width: 30em) {
-	.page-id-41 main,
-	.page-id-83 main,
-	.page-id-130 main,
-	.error404 main,
-	.page-id-242 main,
-	.page-id-142 main {
-		margin: 4rem 2rem;
+	.page main {
+		margin-top: 4rem;
+		padding: 2rem;
 	}
-	.page-id-247 main,
-	.page-template-page-webinars main,
-	.single-webinar main,
-	.page-id-296 main {
-		margin: 3rem 1rem;
+	.home main,
+	.page-id-120 main {
+		margin-top: 1rem;
+		padding: 0;
 	}
 }
 @media screen and (min-width: 41.75em) {
-	.page-id-41 main,
-	.page-id-83 main,
-	.error404 main,
-	.page-id-242 main,
-	.page-id-130 main,
-	.page-id-311 main {
-		margin: 5.5rem 2.2rem;
+	.page main {
+		margin: 4rem 2rem 0;
+		padding: 2rem;
 	}
-	.page-id-247 main,
-	.page-template-page-webinars main,
-	.single-webinar main,
-	.page-id-296 main {
-		margin: 3rem 1.3rem;
+	.home main,
+	.page-id-120 main {
+		margin-top: 2rem;
+		padding: 0;
+		margin: 0;
 	}
 }
 @media screen and (min-width: 55em) {
@@ -1163,7 +1145,9 @@ footer .site-info p {
 	.page-template-page-webinars main,
 	.page-id-130 main,
 	.single-webinar main,
-	.page-id-311 main {
+	.page-id-311 main,
+	.page-id-296 main,
+	.page-id-307 main {
 		margin: 5.5rem 5rem;
 		display: flex;
 		flex-direction: column;
@@ -1177,25 +1161,16 @@ footer .site-info p {
 	.page-template-page-webinars main section,
 	.page-id-130 main section,
 	.single-webinar main section,
-	.page-id-311 main section {
+	.page-id-311 main section,
+	.page-id-296 main section,
+	.page-id-307 main section {
 		max-width: 780px;
 	}
-	.page-id-247 main,
-	.page-template-page-webinars main,
-	.page-id-296 main {
-		margin: 2.5rem 5rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	.page-id-247 main section,
-	.page-template-page-webinars main section,
-	.page-id-296 main section {
-		max-width: 780px;
-	}
-	.page-template-page-webinars main,
-	.page-id-296 main {
-		margin-top: 4.5rem;
+	.home main,
+	.page-id-120 main {
+		margin-top: 2rem;
+		padding: 0;
+		margin: 0;
 	}
 }
 .error404 main h1 {
@@ -2071,6 +2046,25 @@ footer .site-info p {
 }
 .page-id-296 .entry-content a:hover {
 	text-decoration: underline;
+}
+
+.page-id-307 h1.entry-title {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.3rem;
+	letter-spacing: 1px;
+	color: #58429a;
+	font-family: "Poppins", sans-serif;
+}
+.page-id-307 a {
+	color: black;
+}
+.page-id-307 a.button {
+	background-color: #58429a;
+	color: white;
+}
+.page-id-307 a.button:hover {
+	background-color: #4e3a88;
 }
 
 /* Comments
