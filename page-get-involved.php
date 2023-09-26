@@ -84,6 +84,28 @@ get_header();
             }
             ?>
         </article>
+        <article class="cv-involved">
+            <?php
+            if (function_exists('get_field')) {
+                $call_for_volunteers_heading = get_field('call_for_volunteers_heading');
+                if ($call_for_volunteers_heading) {
+                    echo '<h3>' . $call_for_volunteers_heading . '</h3>';
+                }
+
+                $call_for_volunteers_text = get_field('call_for_volunteers_text');
+                if ($call_for_volunteers_text) {
+                    echo '<p>' . $call_for_volunteers_text . '</p>';
+                }
+
+                $cv_link = get_field('cv_link');
+                if ($cv_link) {
+                    ?>
+                   <a class="button" href="<?php echo $cv_link; ?>">Learn More</a>
+                    <?php
+                }
+            }
+            ?>
+        </article>
 		<article class="se-involved">
             <?php
             if (function_exists('get_field')) {
