@@ -230,8 +230,8 @@ button.menu-toggle {
 	padding: 0;
 }
 #nav-icon {
-	width: 45px;
-	height: 30px;
+	width: 35px;
+	height: 20px;
 	position: relative;
 	margin: 20px auto;
 	-webkit-transform: rotate(0deg);
@@ -248,7 +248,7 @@ button.menu-toggle {
 #nav-icon span {
 	display: block;
 	position: absolute;
-	height: 3.5px;
+	height: 3px;
 	width: 100%;
 	background: black;
 	border-radius: 2px;
@@ -265,7 +265,7 @@ button.menu-toggle {
 }
 
 #nav-icon span:nth-child(1) {
-	top: -1px;
+	top: -3px;
 	-webkit-transform-origin: left center;
 	-moz-transform-origin: left center;
 	-o-transform-origin: left center;
@@ -273,7 +273,7 @@ button.menu-toggle {
 }
 
 #nav-icon span:nth-child(2) {
-	top: 13px;
+	top: 9px;
 	-webkit-transform-origin: left center;
 	-moz-transform-origin: left center;
 	-o-transform-origin: left center;
@@ -281,7 +281,7 @@ button.menu-toggle {
 }
 
 #nav-icon span:nth-child(3) {
-	top: 28px;
+	top: 22px;
 	-webkit-transform-origin: left center;
 	-moz-transform-origin: left center;
 	-o-transform-origin: left center;
@@ -307,6 +307,6 @@ nav.toggled #nav-icon span:nth-child(3) {
 	-moz-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-	top: 29px;
+	top: 21px;
 	left: 8px;
 }
