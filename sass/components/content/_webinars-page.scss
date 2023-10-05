@@ -24,6 +24,11 @@
 .single-webinar main .entry-header {
 	max-width: 800px;
 }
+.single-webinar main .entry-content {
+	p {
+		display: none;
+	}
+}
 .webinar-post {
 	.webinar-date {
 		text-transform: uppercase;
