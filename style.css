@@ -946,17 +946,17 @@ button.menu-toggle {
 }
 
 #nav-icon span:nth-child(1) {
-	top: -3px;
+	top: -7px;
 	transform-origin: left center;
 }
 
 #nav-icon span:nth-child(2) {
-	top: 9px;
+	top: 6px;
 	transform-origin: left center;
 }
 
 #nav-icon span:nth-child(3) {
-	top: 22px;
+	top: 19px;
 	transform-origin: left center;
 }
 
@@ -2081,6 +2081,21 @@ footer .site-info p {
 }
 .page-id-307 a.button:hover {
 	background-color: #4e3a88;
+}
+
+.page-id-242 .deadline {
+	font-weight: 600;
+	text-align: center;
+}
+.page-id-242 p.button {
+	text-align: center;
+}
+.page-id-242 p.button a {
+	background-color: #58429a;
+	padding: 0.5rem 1rem;
+	border-radius: 0.35rem;
+	color: #fff;
+	text-decoration: none;
 }
 
 /* Comments
