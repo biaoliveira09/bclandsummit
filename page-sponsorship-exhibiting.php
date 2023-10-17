@@ -38,18 +38,10 @@ get_header();
 					echo '<div>' . $sponsorship_content . '</div>';
 				}
 
-				$contact_us_cta = get_field('contact_us_cta');
-                if ($contact_us_cta) {
-                    $contact_us_cta_url = $contact_us_cta['url'];
-										$contact_us_cta_title = $contact_us_cta['title'];
-										?>
-										<p class="cta-wrap"><a class="button" href="<?php echo $contact_us_cta_url; ?>"><?php echo $contact_us_cta_title; ?></a>
-										<?php
-                }
-
             }
             ?>
 			</div>
+			
     </section>
 
 	<?php endwhile; // End of the loop. ?>

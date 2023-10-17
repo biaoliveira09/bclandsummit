@@ -66,6 +66,14 @@
 			color: white;
 		}
 	}
+	iframe {
+		width: 100%;
+	}
+	.sponsor-btns {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+	}
 }
 @media screen and (min-width: 41.875em) {
 	.page-id-130 main {

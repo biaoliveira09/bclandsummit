@@ -1765,6 +1765,14 @@ footer .site-info p {
 .page-id-130 main p.cta-wrap a:visited {
 	color: white;
 }
+.page-id-130 main iframe {
+	width: 100%;
+}
+.page-id-130 main .sponsor-btns {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
 
 @media screen and (min-width: 41.875em) {
 	.page-id-130 main {
@@ -1984,6 +1992,10 @@ footer .site-info p {
 		width: 600px;
 	}
 }
+iframe {
+	width: 100%;
+}
+
 .section-involved-page h2 {
 	text-transform: uppercase;
 	font-weight: 500;
