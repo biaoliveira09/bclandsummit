@@ -1178,6 +1178,11 @@ footer .site-info p {
 	text-align: center;
 }
 
+.page-id-311 iframe {
+	width: 100%;
+	height: 1700px;
+}
+
 .section-hero {
 	position: relative;
 	margin-top: 3rem;
@@ -1992,10 +1997,6 @@ footer .site-info p {
 		width: 600px;
 	}
 }
-iframe {
-	width: 100%;
-}
-
 .section-involved-page h2 {
 	text-transform: uppercase;
 	font-weight: 500;
@@ -2108,6 +2109,10 @@ iframe {
 	border-radius: 0.35rem;
 	color: #fff;
 	text-decoration: none;
+}
+
+iframe {
+	width: 100%;
 }
 
 /* Comments
