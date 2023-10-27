@@ -916,11 +916,6 @@ nav li#menu-item-157 {
 		flex-direction: row;
 	}
 }
-@media screen and (min-width: 42em) {
-	.main-navigation ul {
-		gap: 1.4rem;
-	}
-}
 button.menu-toggle {
 	margin: 0;
 	padding: 0;
@@ -1271,7 +1266,7 @@ footer .site-info p {
 
 @media screen and (min-width: 40em) {
 	.section-hero {
-		height: 90vh;
+		height: 95vh;
 	}
 	.section-hero h2 {
 		font-size: 2rem;
