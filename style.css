@@ -1146,6 +1146,7 @@ footer .site-info p {
 	.page-id-130 main,
 	.single-webinar main,
 	.page-id-311 main,
+	.page-id-428 main,
 	.page-id-296 main,
 	.page-id-307 main {
 		margin: 5.5rem 5rem;
@@ -1162,6 +1163,7 @@ footer .site-info p {
 	.page-id-130 main section,
 	.single-webinar main section,
 	.page-id-311 main section,
+	.page-id-428 main section,
 	.page-id-296 main section,
 	.page-id-307 main section {
 		max-width: 780px;
@@ -1181,6 +1183,14 @@ footer .site-info p {
 .page-id-311 iframe {
 	width: 100%;
 	height: 1700px;
+}
+
+.page-id-428 .entry-content a {
+	color: #e56f17;
+}
+.page-id-428 iframe {
+	width: 100%;
+	min-height: 780px;
 }
 
 .section-hero {
