@@ -1506,6 +1506,63 @@ footer .site-info p {
 		height: 150px;
 	}
 }
+.section-spons {
+	padding: 2rem 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #58429a;
+}
+.section-spons .spons-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.section-spons .spons-container h3 {
+	color: white;
+	background-color: #58429a;
+	padding: 0.5rem 1rem;
+	font-size: 1.2rem;
+	font-weight: 400;
+	font-family: "Poppins", sans-serif;
+}
+.section-spons .spons-container .spon-type {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 0;
+}
+.section-spons .spons-container .spon-type .spon img {
+	padding: 1rem;
+}
+.section-spons .spons-container .spon-type .spon .presenting-partner img,
+.section-spons .spons-container .spon-type .spon .endeavour-sponsors img {
+	width: 350px;
+}
+.section-spons .spons-container .spon-type .spon .young-anderson-barristers-solicitors {
+	padding: 1.2rem 0;
+}
+.section-spons .spons-container .spon-type .spon .conference-sponsors img {
+	width: 250px;
+}
+.section-spons .spons-container .spon-type .spon .exhibitors img {
+	width: 250px;
+}
+.section-spons .spons-container .spon-type .spon .landscape-forms-inc img {
+	width: 180px;
+}
+.section-spons .spons-container .spon-type .spon .apg-canada-west-belgard-canada {
+	width: 130px;
+}
+@media screen and (min-width: 32em) {
+	.section-spons .spons-container {
+		width: 800px;
+	}
+}
+
 .section-involved {
 	background-color: rgba(88, 66, 154, 0.15);
 	color: #58429a;

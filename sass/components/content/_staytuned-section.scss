@@ -47,3 +47,66 @@
 		}
 	}
 }
+
+.section-spons {
+	padding: 2rem 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	// background-color: rgba(88, 66, 154, 0.15);
+	color: $bcls__purple;
+
+	.spons-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		h3 {
+			color: white;
+			background-color: $bcls__purple;
+			padding: 0.5rem 1rem;
+			font-size: 1.2rem;
+			font-weight: 400;
+			font-family: 'Poppins', sans-serif;
+		}
+		.spon-type {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1.5rem;
+			align-items: center;
+			justify-content: center;
+			padding: 1rem 0;
+			.spon {
+				img {
+					padding: 1rem;
+				}
+				.presenting-partner img,
+				.endeavour-sponsors img {
+					width: 350px;
+				}
+
+				.young-anderson-barristers-solicitors {
+					padding: 1.2rem 0;
+				}
+
+				.conference-sponsors img {
+					width: 250px;
+				}
+
+				.exhibitors img {
+					width: 250px;
+				}
+
+				.landscape-forms-inc img {
+					width: 180px;
+				}
+				.apg-canada-west-belgard-canada {
+					width: 130px;
+				}
+			}
+		}
+		@media screen and (min-width: 32em) {
+			width: 800px;
+		}
+	}
+}

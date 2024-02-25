@@ -146,9 +146,8 @@ get_header();
 											<?php
 					}
 				}
-            ?>
+				?>
         </section>
-
 		<section class="section-staytuned">
 			<?php
 			if (function_exists('get_field')) {
@@ -161,14 +160,78 @@ get_header();
 					if ($stay_tuned_heading) {
 						echo '<div><h2>' . $stay_tuned_heading . '</h2>';
 					}
-
+		
 					$stay_tuned_text = get_field('stay_tuned_section')['stay_tuned_text'];
 					if ($stay_tuned_text) {
 						echo '<div>' . $stay_tuned_text . '</div></div>';
 					}
 				}
-            ?>
-        </section>
+			?>
+		</section>
+		<section class="section-spons">
+			<div class="spons-container">
+			<h2>Thank you to our sponsors!</h2>
+			<p>We would like to thank our sponsors for generously supporting the 2024 BC Land Summit.</p>
+			<?php
+		// Define your custom taxonomy slug
+		$taxonomy = 'sponsor-type';
+
+		// Define your custom post type slug
+		$post_type = 'sponsor';
+
+		// Get the terms for the specified taxonomy
+		$terms = get_terms(array(
+			'taxonomy' => $taxonomy,
+			'orderby' => 'term_id', // Order by term ID
+			'order' => 'ASC',       // Ascending order
+		));
+
+		// Loop through each term
+		foreach ($terms as $term) {
+			// Define the query arguments
+			$args = array(
+				'post_type' => $post_type,
+				'tax_query' => array(
+					array(
+						'taxonomy' => $taxonomy,
+						'field' => 'slug',
+						'terms' => $term->slug,
+						'orderby' => 'ID',
+						'order' => 'asc',
+					),
+				),
+			);
+
+    // Instantiate new WP_Query
+    $query = new WP_Query($args);
+
+    // Check if there are any posts for the current term
+    if ($query->have_posts()) {
+		echo '<h3>' . $term->name . '</h3>';
+		echo '<div class="spon-type">';
+        
+        // Start the loop
+        while ($query->have_posts()) {
+            $query->the_post();
+			global $post;
+			$post_slug = $post->post_name;
+
+			echo '<div class="spon">';
+			echo '<a href="' . get_field('sponsor_link') .'" target="_blank">';
+			echo '<div class="' . $post_slug . ' ' .$term->slug .'">';
+			echo the_post_thumbnail();
+			echo '</div>';
+			echo '</a>';
+			echo '</div>';
+        }
+        echo '</div>';
+        // Reset post data
+        wp_reset_postdata();
+    }
+}
+?>
+		</div>
+		</section>
 		<?php endwhile; // End of the loop. ?>
 
 	</main><!-- #main -->
