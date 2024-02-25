@@ -173,10 +173,10 @@ get_header();
 			<h2>Thank you to our sponsors!</h2>
 			<p>We would like to thank our sponsors for generously supporting the 2024 BC Land Summit.</p>
 			<?php
-		// Define your custom taxonomy slug
+		// Define ustom taxonomy slug
 		$taxonomy = 'sponsor-type';
 
-		// Define your custom post type slug
+		// Define custom post type slug
 		$post_type = 'sponsor';
 
 		// Get the terms for the specified taxonomy
