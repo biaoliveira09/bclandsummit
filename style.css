@@ -1530,7 +1530,7 @@ footer .site-info p {
 .section-spons .spons-container .spon-type {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1.5rem;
+	gap: 1rem;
 	align-items: center;
 	justify-content: center;
 	padding: 1rem 0;
@@ -1557,9 +1557,12 @@ footer .site-info p {
 .section-spons .spons-container .spon-type .spon .apg-canada-west-belgard-canada {
 	width: 130px;
 }
-@media screen and (min-width: 32em) {
+.section-spons .spons-container .spon-type .spon .play-envy {
+	width: 195px;
+}
+@media screen and (min-width: 62em) {
 	.section-spons .spons-container {
-		width: 800px;
+		width: 900px;
 	}
 }
 
